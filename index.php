@@ -8,7 +8,6 @@
     <main>
         <h1>Bienvenue sur 4w4</h1>
     </main>
-<?php get_footer(); ?>  
-
+<?php get_footer(); ?>   
 </body>
 </html>
