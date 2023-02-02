@@ -7,8 +7,8 @@
     <?php get_header(); ?>    
 
         <main>
-            <pre>index.php</pre>
-            <h1>Bienvenue sur 4w4</h1>
+            <pre>front-page.php</pre>
+            <h1>pre</h1>
 
             <?php 
                 if(have_posts()):
