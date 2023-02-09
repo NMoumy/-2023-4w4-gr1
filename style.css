@@ -445,10 +445,17 @@ article {
   border-radius: 10px;
 }
 
+article:hover {
+  background-color: #7b7442;
+}
+article:hover p {
+  color: white;
+}
+
 main .dans__article {
   width: 80%;
   height: 500px;
-  background-color: #514B23;
+  background-color: #7b7442;
 }
 main .dans__article h3 {
   color: white;
