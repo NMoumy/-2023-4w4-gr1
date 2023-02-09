@@ -11,12 +11,14 @@
 </head>
 <body>
     <header class="site__entete">
-        <?php the_custom_logo(); ?>
-        <?php wp_nav_menu(array(
-                            "menu" => "entete",
-                            "container" => "nav",
-                            "container_class" => "menu__entete", //pour changer le nom de la class
-        )); ?>
+        <div class="site__nav">
+            <?php the_custom_logo(); ?>
+            <?php wp_nav_menu(array(
+                                "menu" => "entete",
+                                "container" => "nav",
+                                "container_class" => "menu__entete", //pour changer le nom de la class
+            )); ?>
+        </div>
 
         <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
         <h2><?= bloginfo('description'); ?></h2>
