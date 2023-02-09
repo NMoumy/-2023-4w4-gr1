@@ -375,7 +375,7 @@ p {
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
-  color: black;
+  color: #514B23;
 }
 
 .site__titre h1 {
@@ -386,10 +386,18 @@ p {
 .menu__entete .menu {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  background-color: #CBD0B9;
+  border: 2px solid #514B23;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
 }
 .menu__entete .menu .menu-item a {
   padding: 3px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
 }
 
 main {

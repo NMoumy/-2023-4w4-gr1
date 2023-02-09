@@ -1,6 +1,6 @@
 .site__titre {
   text-decoration: none;
-  color: black;
+  color: #514B23;
 }
 .site__titre h1 {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
@@ -10,15 +10,25 @@
 .menu__entete { // nav
 
   .menu { // ul
-
     display: flex;
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+
+    background-color: #CBD0B9;
+
+    border: 2px solid #514B23;
+    border-left: none;
+    border-right: none;
+
+    padding: 10px;
 
     .menu-item { // li
       
       a {
         padding : 3px 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
       }
 
     }
