@@ -375,7 +375,11 @@ p {
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
-  color: #514B23;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  background-color: #514B23;
+  padding: 15px 0 15px 0;
 }
 
 .site__titre h1 {
@@ -398,6 +402,7 @@ p {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 main {
