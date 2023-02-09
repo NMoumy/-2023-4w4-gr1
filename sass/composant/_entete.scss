@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: #514B23;
   padding: 15px 0 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .site__titre h1 {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
@@ -16,7 +17,8 @@
   .menu { // ul
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 50px;
 
     background-color: #CBD0B9;
 
