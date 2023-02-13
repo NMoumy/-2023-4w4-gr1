@@ -380,6 +380,10 @@ p {
   align-items: center;
   background-color: #CBD0B9;
 }
+.site__nav .custom-logo-link img {
+  width: 85px;
+  height: auto;
+}
 
 .site__titre {
   text-decoration: none;
@@ -452,7 +456,7 @@ article {
 }
 
 article:hover {
-  background-color: #7b7442;
+  background-color: #9dbaaf;
 }
 article:hover p {
   color: white;
@@ -461,7 +465,7 @@ article:hover p {
 main .dans__article {
   width: 80%;
   padding: 10px;
-  background-color: #7b7442;
+  background-color: #BDDBD0;
 }
 main .dans__article h3 {
   color: white;

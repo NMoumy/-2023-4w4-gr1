@@ -4,7 +4,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: #CBD0B9;
+
+  .custom-logo-link img{
+    width: 85px;
+    height: auto;
+  }
 }
+
 
 .site__titre {
   text-decoration: none;
