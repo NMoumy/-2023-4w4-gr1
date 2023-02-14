@@ -19,6 +19,7 @@ Text Domain: 4w4-moumy-ndiaye
 
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";
@@ -27,3 +28,4 @@ Text Domain: 4w4-moumy-ndiaye
 @import "composant/entete";
 @import "composant/front-page";
 @import "composant/single";
+@import "composant/blocflex";

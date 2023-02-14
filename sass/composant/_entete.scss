@@ -1,31 +1,19 @@
-.site__nav {
+/* ///////////////////////////////////// entete barre de navigation */
+.entete__nav { // barre de navigation
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #CBD0B9;
 
-  .custom-logo-link img{
+  .custom-logo-link img{ // logo
     width: 85px;
     height: auto;
   }
 }
 
+/* ///////////////////////////////////// menu entete */
 
-.site__titre {
-  text-decoration: none;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  background-color: #514B23;
-  padding: 15px 0 15px 0;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.site__titre h1 {
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-}
-
-/* ///////////////////////////////////// menu_ente */
 .menu__entete { // nav
 
   .menu { // ul
@@ -52,4 +40,26 @@
 
   }
 
+}
+
+/* ///////////////////////////////////// titre entete */
+
+.site__titre { // titre principale
+  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    background-color: #514B23;
+    padding: 15px 0 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+}
+
+.site__sous__titre { // titre slogan
+  display: flex;
+  justify-content: center;
 }

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="site__entete">
-        <div class="site__nav">
+        <div class="entete__nav">
             <?php the_custom_logo(); ?>
             <?php wp_nav_menu(array(
                                 "menu" => "entete",
@@ -20,7 +20,7 @@
             )); ?>
         </div>
 
-        <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
-        <h2><?= bloginfo('description'); ?></h2>
+        <h1 class="site__titre"><a href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
+        <h2 class="site__sous__titre"><?= bloginfo('description'); ?></h2>
 
     </header>

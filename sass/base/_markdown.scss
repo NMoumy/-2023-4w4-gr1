@@ -1,0 +1,34 @@
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+
+/* Liste */
+ul,ol{}
+
+ul > li,
+ol > li{
+
+}
+
+ul>li {}
+
+ol>li{}
+
+/* ----------------------------  pre */
+
+pre {
+  background-color: black;
+  color: white;
+}
+
+code {}
+
+i{}
+
+blockquote {}
+
+hr {}
+
+strong {}
+
+
+
+
