@@ -1,21 +1,20 @@
 <?php 
 /**
-* front-page.php est le modèle par défaut du thème 4w4
+* category.php est le modèle par défaut pour afficher une archive d'articles de catégorie specifique
 */ 
 ?>
 
     <?php get_header(); ?>    
 
         <main>
-            <pre>front-page.php</pre>
+            <pre>category.php</pre>
             <h1>Bienvenue sur 4W4</h1>
             <section class="blocflex">
                 <?php if(have_posts()): 
                     while(have_posts()): the_post(); ?>
                         <article>
                             <a href="<?php the_permalink(); ?>">
-                                <h3><?= wp_trim_words(get_the_title(), 5, "..."); ?></h3>
-                                <!-- get_the_excerpt(); -->
+                                <h3><?php the_title(); ?></h3>
                                 <hr> 
                                 <?= wp_trim_words(get_the_excerpt(), 10, "..."); ?>
                             </a>

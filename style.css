@@ -376,19 +376,58 @@ p {
 /* Liste */
 ul, ol {
   background-color: white;
-  padding: 10px;
-  list-style-type: none;
+  margin: 0rem 0rem;
+  padding: 7px;
+  font-size: 1.1rem;
+  color: #656839;
+}
+@media screen and (min-width: 400px) {
+  ul, ol {
+    margin: 1rem 0.5rem;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 700px) {
+  ul, ol {
+    margin: 1rem 0.5rem;
+    padding: 13px;
+  }
+}
+
+ul {
+  list-style-type: round;
+}
+ul ul {
+  list-style-type: square;
 }
 
 ul > li,
 ol > li {
-  color: rgb(255, 19, 19);
+  margin: 0.5rem 0rem;
 }
 
 /* ----------------------------  pre */
 pre {
-  background-color: black;
+  background-color: #656839;
   color: white;
+  overflow-x: scroll;
+}
+
+pre::-webkit-scrollbar {
+  background-color: #BDDBD0;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #312e14;
+}
+
+hr {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 /* --------------------------------------------- composant */
@@ -444,7 +483,6 @@ pre {
 
 main {
   background-color: #CBD0B9;
-  padding-left: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -461,14 +499,30 @@ main h1 {
 
 main .dans__article {
   width: 80%;
-  padding: 10px;
-  background-color: #BDDBD0;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 main .dans__article h3 {
-  color: white;
+  color: #312e14;
+  padding-bottom: 1rem;
+}
+main .dans__article h2 {
+  color: #656839;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  border: #312e14 1px solid;
 }
 main .dans__article p {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+main .dans__article a {
+  text-decoration: none;
+  color: black;
+}
+main .dans__article a:hover {
+  color: rgb(98, 255, 0);
 }
 
 .blocflex {
@@ -479,17 +533,23 @@ main .dans__article p {
 .blocflex article {
   flex: 1 0 250px;
   padding: 10px;
-  margin: 10px;
-  border: 1px solid black;
-  background-color: #BDDBD0;
+  margin: 20px;
+  border: 1px solid #97aea5;
+  font-size: 1rem;
+  background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 10px;
   transition: all ease 1s;
 }
 .blocflex article a {
   text-decoration: none;
-  font-size: 1.7rem;
-  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  color: #514B23;
+}
+.blocflex article h3 {
+  color: #312d16;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 .blocflex article:hover {
   background-color: #9dbaaf;
