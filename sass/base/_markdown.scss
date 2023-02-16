@@ -39,7 +39,7 @@ ol > li{
 // code {}
 
 pre {
-  background-color: #656839;
+  background: #312e14;
   color: white;
   overflow-x: scroll;
 }
@@ -48,7 +48,7 @@ pre::-webkit-scrollbar {
   background-color: #BDDBD0;
 }
 pre::-webkit-scrollbar-thumb {
-  background: #312e14;
+  background-color: #656839;
   // outline: 10px solid rgb(0, 0, 0);
 }
 

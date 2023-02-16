@@ -408,7 +408,7 @@ ol > li {
 
 /* ----------------------------  pre */
 pre {
-  background-color: #656839;
+  background: #312e14;
   color: white;
   overflow-x: scroll;
 }
@@ -418,7 +418,7 @@ pre::-webkit-scrollbar {
 }
 
 pre::-webkit-scrollbar-thumb {
-  background: #312e14;
+  background-color: #656839;
 }
 
 hr {
@@ -507,12 +507,12 @@ main .dans__article h3 {
   padding-bottom: 1rem;
 }
 main .dans__article h2 {
-  color: #656839;
+  color: white;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   padding: 1.2rem;
-  border: #312e14 1px solid;
+  background-color: #656839;
 }
 main .dans__article p {
   color: rgb(0, 0, 0);
