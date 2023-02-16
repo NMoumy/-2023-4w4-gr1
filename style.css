@@ -509,8 +509,6 @@ main .dans__article h3 {
 main .dans__article h2 {
   color: white;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
   padding: 1.2rem;
   background-color: #656839;
 }
@@ -553,4 +551,13 @@ main .dans__article a:hover {
 }
 .blocflex article:hover {
   background-color: #9dbaaf;
+}
+
+main h2 {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  background-color: #656839;
 }/*# sourceMappingURL=style.css.map */
