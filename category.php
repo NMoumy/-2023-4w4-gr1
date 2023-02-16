@@ -9,6 +9,7 @@
         <main>
             <pre>category.php</pre>
             <h1>Bienvenue sur 4W4</h1>
+            <div class=""><?= category_description() ?></div>
             <section class="blocflex">
                 <?php if(have_posts()): 
                     while(have_posts()): the_post(); ?>
