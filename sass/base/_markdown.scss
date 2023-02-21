@@ -7,6 +7,7 @@ ul,ol{
   padding: 7px;
   font-size: 1.1rem;
   color: #656839;
+  font-family: 'Roboto', sans-serif;
 
   @media screen and (min-width: 400px) {
     margin: 1rem 0.5rem;
@@ -20,12 +21,17 @@ ul,ol{
 
 }
 
-ul {
-  list-style-type: round;
-  ul{
-    list-style-type: square;
-  }
-}
+// ul li::before {
+//   content: "☀";
+//   background: rgb(0, 0, 0);
+//   border-radius: .5rem;
+//   padding-inline: .3rem;
+//   margin-inline-end: .3rem;
+// }
+// ul li li::before
+// {
+//   background: transparent;
+// }
 
 ul > li,
 ol > li{
