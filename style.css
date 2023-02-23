@@ -604,6 +604,14 @@ main h2 {
 .recherche .barre__recherche .recherche__input::placeholder {
   color: rgb(255, 255, 255);
 }
+.recherche .barre__recherche .recherche__input:focus {
+  outline: none;
+}
+.recherche .barre__recherche input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  content: url();
+  cursor: pointer;
+}
 .recherche .recherche__icone {
   background-color: white;
   padding: 0.5rem;
