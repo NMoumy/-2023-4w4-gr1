@@ -583,4 +583,37 @@ main h2 {
 .recherche__section article h5 a {
   color: rgb(55, 83, 54);
   text-decoration: none;
+}
+
+.recherche .barre__recherche {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s;
+}
+.recherche .barre__recherche .recherche__input {
+  border: none;
+  background-color: #514B23;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.recherche .barre__recherche .recherche__input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.recherche .recherche__icone {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #514B23;
+}
+.recherche .recherche__bouton:hover {
+  background-color: #cfcfcf;
+}
+
+.check {
+  display: none;
+}
+
+.check:checked + .barre__recherche {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
