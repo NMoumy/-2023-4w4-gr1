@@ -1,8 +1,10 @@
 .recherche {
-  
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
   .barre__recherche {
     opacity: 0;
-    display: none;
     transition: opacity 1s;
   
     .recherche__input {
@@ -39,5 +41,4 @@
 
 .check:checked + .barre__recherche {
   opacity: 1;
-
 }

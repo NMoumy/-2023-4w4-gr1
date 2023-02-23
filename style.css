@@ -585,9 +585,13 @@ main h2 {
   text-decoration: none;
 }
 
+.recherche {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 .recherche .barre__recherche {
   opacity: 0;
-  display: none;
   transition: opacity 1s;
 }
 .recherche .barre__recherche .recherche__input {
