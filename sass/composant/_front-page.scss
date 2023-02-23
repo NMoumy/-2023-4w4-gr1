@@ -4,12 +4,13 @@
     flex-direction: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // border-bottom: 1px solid black;
+    // border-top: 1px solid black;
   }
 
   main h1 {
-    color: #656839;
-    background-color: white;
+    background-color: #656839;
+    color: white;
     padding: 5px 80px 5px 80px;
-    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
