@@ -18,14 +18,16 @@
     .recherche__input::placeholder {
       color: rgb(255, 255, 255);
     }
+    
     .recherche__input:focus{
       outline: none;
     }
-    input::-webkit-search-cancel-button { //pour enlever le x dans la barre de recherche
-      -webkit-appearance: none;
-      content: URL();
-      cursor: pointer;
-     }
+
+    // input::-webkit-search-cancel-button { //pour enlever le x dans la barre de recherche
+    //   // -webkit-appearance: none;
+    //   // content: URL();
+    //   // cursor: pointer;
+    //  }
 
   }
 
