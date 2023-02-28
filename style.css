@@ -618,8 +618,9 @@ main h2 {
   border-radius: 50%;
   border: 1px solid #514B23;
 }
-.recherche .recherche__bouton:hover {
-  background-color: #cfcfcf;
+.recherche .recherche__icone:hover {
+  background-color: #f20404;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .check {
@@ -628,4 +629,13 @@ main h2 {
 
 .check:checked + .barre__recherche {
   opacity: 1;
+}
+
+.erreur__main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.erreur__main h1 {
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */
