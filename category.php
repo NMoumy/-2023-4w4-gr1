@@ -21,9 +21,19 @@
                 // Tout le reste de l'extraction de données est basés sur wp_query 
                 // sur la nouvelle requête de contenue dans wp_query
                 if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post(); ?>
+                    while ( $query->have_posts() ) : $query->the_post(); 
+                    $titre = get_the_title();
+                    // echo $category->slug;
+                    if($category->slug == "cours"){
+                        $sigle = substr($titre, 0, 7);
+                        $titre_long = substr($titre, 7, -5);// il faut enlever la duree avec un moins
+                        $duree = "90";
+                        $titre = $sigle;
+                    }
+                    ?>
+
                         <article>
-                            <h3><?= wp_trim_words(get_the_title(), 5, "..."); ?></h3>
+                            <h3><a href="<?php the_permalink();?>"><?= $titre; ?></a></h3>
                             <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
                         </article>
                     <?php endwhile; ?>

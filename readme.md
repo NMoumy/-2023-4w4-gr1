@@ -1,5 +1,8 @@
-## 4W4-Conception d'interfaces et développement Web
+### 4W4-Conception d'interfaces et développement Web
 ### Auteur : Moumy Ndiaye
+#### Liens de référence
+- Site sur le serveur web distant **siteground**
+  - https://cidweb37.sg-host.com/
 
 # TP1 (20 points)
 
@@ -58,3 +61,4 @@
 
 2. Organisation de l'entête, footer et partie principale. Qualité du design et de l’intégration des différents éléments de contenu. Notamment, les articles de notes de cours s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurés et affichent l'information prévue. **_(10 points)_**
 3. Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. **_(5 points)_**
+

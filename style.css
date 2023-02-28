@@ -425,6 +425,20 @@ strong {
   color: rgb(0, 0, 0);
 }
 
+/*
+Voici une liste de balises HTML5 couramment utilisées pour la transformation d'un fichier Markdown en HTML :
+h1 - h6 : les en-têtes de niveau 1 à 6
+p : les paragraphes
+strong ou b : le texte en gras
+em ou i : le texte en italique
+a : les liens hypertexte
+img : les images
+ul et li : les listes à puces
+ol et li : les listes numérotées
+code : le texte en code
+blockquote : les citations
+hr : la ligne de séparation horizontale
+*/
 /* --------------------------------------------- composant */
 .site__entete {
   /* ///////////////////////////////////// entete barre de navigation */
@@ -526,7 +540,7 @@ main .dans__article a {
   color: black;
 }
 main .dans__article a:hover {
-  color: rgb(98, 255, 0);
+  color: rgb(4, 97, 123);
 }
 
 .blocflex {
@@ -614,7 +628,7 @@ main h2 {
   border: 1px solid #514B23;
 }
 .recherche .recherche__icone:hover {
-  background-color: #f20404;
+  background-color: #b0b0b0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -626,11 +640,42 @@ main h2 {
   opacity: 1;
 }
 
-.erreur__main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-.erreur__main h1 {
+h1 {
   background-color: aqua;
+}
+
+/* --------------------------------------------- layout */
+/**
+Mise en page généra;e avec display:grid
+*/
+.site__entete {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+}
+
+.site__main {
+  grid-area: main;
+  background-color: #CBD0B9;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: #BDDBD0;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #656839;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: auto 20%;
+    grid-template-areas: "header header" "main aside" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
