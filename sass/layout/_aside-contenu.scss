@@ -5,23 +5,23 @@ Mise en page généra;e avec display:grid
 .site__entete {
   grid-area: header;
   // padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(255, 255, 255);
+  // background-color: rgb(255, 255, 255);
 }
 
 .site__main {
   grid-area: main;
   // overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #CBD0B9;
+  background-color: #F3D3BD;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: #BDDBD0;
+  background-color: #48E5C2;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #656839;
+  background-color: #5E5E5E;
 }
 
 .site {

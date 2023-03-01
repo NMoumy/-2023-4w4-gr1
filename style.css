@@ -450,7 +450,6 @@ hr : la ligne de séparation horizontale
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #CBD0B9;
   padding: 0 10px 0 10px;
 }
 .site__entete .entete__nav .menu__logo {
@@ -467,13 +466,12 @@ hr : la ligne de séparation horizontale
   justify-content: flex-end;
   padding-right: 20px;
   gap: 1.2rem;
-  background-color: #CBD0B9;
   padding: 10px;
 }
 .site__entete .menu__entete .menu .menu-item a {
   padding: 3px 5px;
   text-decoration: none;
-  color: white;
+  color: #242F40;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -493,21 +491,23 @@ hr : la ligne de séparation horizontale
   color: #ffffff;
   display: flex;
   justify-content: center;
-  background-color: #514B23;
+  background-color: #363636;
   padding: 15px 0 15px 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .site__entete .site__sous__titre {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding-bottom: 20px;
+  color: #CCA43B;
+  background-color: #242F40;
 }
 
 main {
-  background-color: #CBD0B9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 main h1 {
@@ -650,22 +650,21 @@ Mise en page généra;e avec display:grid
 */
 .site__entete {
   grid-area: header;
-  background-color: rgb(255, 255, 255);
 }
 
 .site__main {
   grid-area: main;
-  background-color: #CBD0B9;
+  background-color: #F3D3BD;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: #BDDBD0;
+  background-color: #48E5C2;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #656839;
+  background-color: #5E5E5E;
 }
 
 .site {
