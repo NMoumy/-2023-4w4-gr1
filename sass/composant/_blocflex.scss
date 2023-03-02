@@ -1,37 +1,45 @@
 .blocflex {
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
-  article{
+
+  /***************************** les articles*/
+  &__article{
     flex: 1 0 250px;
     padding: 10px;
     margin: 20px;
-    border: 1px solid black;
+    // border: 1px solid #252422;
     font-size: 1rem;
-    background-color: white;
-    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    // border-radius: 10px;
+    background-color: #252422;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: all ease 1s;
-    
+    cursor: pointer;
+
     a {
       text-decoration: none;
       font-size: 1rem;
-      color: black;
+      color: rgb(253, 253, 253);
     }
 
-    h3 {
-      color: rgb(0, 0, 0);
-      font-size: 1.5rem;
-      padding-bottom: 10px;
+    h5 {
+      // font-size: 1.5rem;
+      // padding-bottom: 10px;
+    }
+    p {
+      color: #dddddd;
     }
 
   }
-
-  article:hover {
-    background-color: grey;
+  
+  &__article:hover {
+    background-color: #403d39;
     //background-color: #BDDBD0;;
+  }
+
+  /***************************** la galerie*/
+  &__galerie {
+    flex: 1 0 100%;
   }
 
 }

@@ -11,21 +11,22 @@ Mise en page généra;e avec display:grid
 .site__main {
   grid-area: main;
   // overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(61, 61, 61);
-  
+  background-color: #252422;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-
 .site__footer {
   grid-area: footer;
-  background-color: white;
+  background-color: #ccc5b9;
 }
 
 .site {

@@ -492,6 +492,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #fffcf2;
   padding: 0 10px 0 10px;
 }
 .site__entete .entete__nav .menu__logo {
@@ -513,7 +514,7 @@ hr {
 .site__entete .menu__entete .menu .menu-item a {
   padding: 3px 5px;
   text-decoration: none;
-  color: black;
+  color: #252422;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -530,10 +531,10 @@ hr {
 }
 .site__entete .site__titre a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: #252422;
   padding: 15px 0 15px 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -542,14 +543,17 @@ hr {
   justify-content: center;
   margin: 0;
   padding-bottom: 20px;
-  color: white;
-  background-color: black;
+  color: #403d39;
+  background-color: #ccc5b9;
 }
 
-main h1 {
-  background-color: rgb(167, 167, 167);
-  color: black;
-  padding: 5px 80px 5px 80px;
+.site__main h3 {
+  color: #252422;
+  padding-top: 30px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: inline;
+  text-align: center;
 }
 
 .site__main .dans__article {
@@ -562,28 +566,33 @@ main h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /***************************** les articles*/
+  /***************************** la galerie*/
 }
-.blocflex article {
+.blocflex__article {
   flex: 1 0 250px;
   padding: 10px;
   margin: 20px;
-  border: 1px solid black;
   font-size: 1rem;
-  background-color: white;
+  background-color: #252422;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: all ease 1s;
+  cursor: pointer;
 }
-.blocflex article a {
+.blocflex__article a {
   text-decoration: none;
   font-size: 1rem;
-  color: black;
+  color: rgb(253, 253, 253);
 }
-.blocflex article h3 {
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  padding-bottom: 10px;
+.blocflex__article p {
+  color: #dddddd;
 }
-.blocflex article:hover {
-  background-color: grey;
+.blocflex__article:hover {
+  background-color: #403d39;
+}
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 main h2 {
@@ -668,20 +677,23 @@ Mise en page généra;e avec display:grid
 
 .site__main {
   grid-area: main;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(61, 61, 61);
+  background-color: #252422;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: white;
+  background-color: #ccc5b9;
 }
 
 .site {

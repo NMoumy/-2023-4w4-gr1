@@ -30,7 +30,7 @@
 
     </header>
     <aside class="site__aside">
-        <h3>Note de cours</h3>
+        <h3>Menu secondaire</h3>
         <?php
             $category = get_queried_object();
             if (isset($category)) {

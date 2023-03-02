@@ -8,18 +8,18 @@
 
         <main class="site__main">
             <!-- <pre>front-page.php</pre> -->
-            <h1>Bienvenue sur 4W4</h1>
+            <h3>Bienvenue sur 4W4</h3>
             <section class="blocflex">
                 <?php if(have_posts()): 
                     while(have_posts()): the_post(); ?>
-                        <article>
-                            <a href="<?php the_permalink(); ?>">
-                                <h3><?= wp_trim_words(get_the_title(), 5, "..."); ?></h3>
-                                <!-- get_the_excerpt(); -->
-                                <hr> 
-                                <?= wp_trim_words(get_the_excerpt(), 10, "..."); ?>
-                            </a>
-                        </article>
+                        <?php 
+                            if (in_category('galerie')) {
+                                get_template_part("template-parts/categorie","galerie");
+                            } 
+                            else {
+                                get_template_part("template-parts/categorie","note-4w4");
+                            }
+                        ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </section>
