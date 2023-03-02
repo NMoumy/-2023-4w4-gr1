@@ -8,7 +8,7 @@
 
         <main class="site__main">
             <!-- <pre>single.php</pre> -->
-            <h1>Bienvenue sur 4W4</h1>
+            <h3>Bienvenue sur 4W4</h3>
             <?php if(have_posts()): 
                 while(have_posts()): the_post(); ?>
                 <article class="dans__article">

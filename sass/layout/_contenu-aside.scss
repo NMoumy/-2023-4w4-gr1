@@ -17,12 +17,33 @@ Mise en page généra;e avec display:grid
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
 .site__aside {
   grid-area: aside;
   background-color: #252422;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  h3{
+    color: #fffcf2;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    a{
+      padding-bottom: 2rem;
+      color: #fffcf2;
+    }
+
+  }
+
 }
 .site__footer {
   grid-area: footer;
@@ -37,6 +58,7 @@ Mise en page généra;e avec display:grid
     "aside"
     "main"
     "footer";
+  overflow-x: hidden;
 
   @media screen and (min-width: 1000px) {
     grid-template-columns: auto 20%;

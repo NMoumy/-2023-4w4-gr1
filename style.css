@@ -557,10 +557,7 @@ hr {
 }
 
 .site__main .dans__article {
-  width: 80%;
-  height: 100%;
-  padding: 2rem;
-  background-color: #ff0202;
+  background-color: #ccc5b9;
 }
 .blocflex {
   display: flex;
@@ -612,13 +609,14 @@ main h2 {
   flex: 1 0 250px;
   padding: 10px;
   margin: 20px;
-  background-color: white;
+  background-color: #252422;
   border: 1px solid #97aea5;
   font-size: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
 }
 .recherche__section article h5 a {
-  color: rgb(55, 83, 54);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -633,8 +631,8 @@ main h2 {
 }
 .recherche .barre__recherche .recherche__input {
   border: none;
-  background-color: #514B23;
-  color: rgb(255, 255, 255);
+  background-color: #252422;
+  color: #fffcf2;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -648,7 +646,7 @@ main h2 {
   background-color: white;
   padding: 0.5rem;
   border-radius: 50%;
-  border: 1px solid #514B23;
+  border: 1px solid #000000;
 }
 .recherche .recherche__icone:hover {
   background-color: #b0b0b0;
@@ -664,7 +662,7 @@ main h2 {
 }
 
 h1 {
-  background-color: aqua;
+  background-color: rgb(255, 0, 0);
 }
 
 /* --------------------------------------------- layout */
@@ -689,6 +687,22 @@ Mise en page généra;e avec display:grid
   grid-area: aside;
   background-color: #252422;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.site__aside h3 {
+  color: #fffcf2;
+}
+.site__aside li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.site__aside li a {
+  padding-bottom: 2rem;
+  color: #fffcf2;
 }
 
 .site__footer {
@@ -700,6 +714,7 @@ Mise en page généra;e avec display:grid
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
+  overflow-x: hidden;
 }
 @media screen and (min-width: 1000px) {
   .site {
