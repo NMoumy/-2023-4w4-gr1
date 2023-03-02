@@ -1,15 +1,9 @@
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  // main {
 
-    // border-bottom: 1px solid black;
-    // border-top: 1px solid black;
-  }
-
+  // }
   main h1 {
-    background-color: #656839;
-    color: white;
+    background-color: rgb(167, 167, 167);
+    color: black;
     padding: 5px 80px 5px 80px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    // box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }

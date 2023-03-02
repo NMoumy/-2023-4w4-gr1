@@ -1,12 +1,11 @@
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
 
-/* Liste */
+/* ----------------------------  la liste */
 ul,ol{
-  background-color: white;
   margin: 0rem 0rem;
   padding: 7px;
   font-size: 1.1rem;
-  color: #656839;
+  color: #000000;
   font-family: 'Roboto', sans-serif;
 
   @media screen and (min-width: 400px) {
@@ -21,6 +20,11 @@ ul,ol{
 
 }
 
+ul > li,
+ol > li{
+  margin: 0.5rem 0rem;
+}
+
 // ul li::before {
 //   content: "☀";
 //   background: rgb(0, 0, 0);
@@ -33,62 +37,91 @@ ul,ol{
 //   background: transparent;
 // }
 
-ul > li,
-ol > li{
-  margin: 0.5rem 0rem;
-}
-
 // ul>li {}
 // ol>li {}
 
-/* ----------------------------  pre */
-// code {}
+/* ----------------------------  le texte */
+/*h1 {
+  
+}*/
+h2 {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  // padding: 1.2rem;
+}
+h3 {
+  color: #ffffff;
+  // padding-bottom: 1rem;
+}
+/*h4 {
 
-pre {
-  background: #312e14;
-  color: white;
-  overflow-x: scroll;
+}
+h5 {
+
+}
+h5 {
+
+}
+h6 {
+
+}*/
+
+p {
+  color: rgb(0, 0, 0);
 }
 
-pre::-webkit-scrollbar {
-  background-color: #BDDBD0;
-}
-pre::-webkit-scrollbar-thumb {
-  background-color: #656839;
-  // outline: 10px solid rgb(0, 0, 0);
-}
-
-hr {
-  display: none;
-}
-
+/* ----------------------------  texte italique et gras */
 strong {
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
 
-// i{}
+/*i {
 
-// blockquote {}
+}*/
 
-/*
-Voici une liste de balises HTML5 couramment utilisées pour la transformation d'un fichier Markdown en HTML :
-h1 - h6 : les en-têtes de niveau 1 à 6
-p : les paragraphes
-strong ou b : le texte en gras
-em ou i : le texte en italique
-a : les liens hypertexte
-img : les images
-ul et li : les listes à puces
-ol et li : les listes numérotées
-code : le texte en code
-blockquote : les citations
-hr : la ligne de séparation horizontale
-*/
+/* ----------------------------  les liens hypertexte */
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(4, 97, 123);
+}
+
+/* ----------------------------  pre */
+pre {
+  background: black;
+  color: white;
+  overflow-x: scroll;
+}
+/*la barre de defilement*/
+pre::-webkit-scrollbar {
+  background-color: grey;
+}
+pre::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+/*le texte en code*/
+/*code {
+
+}*/
+
+/* ----------------------------  image */
+/*img {
+  
+}*/
 
 
+/* ----------------------------  les citations et la ligne de separation */
+/*blockquote {
 
+}*/
 
-
+hr {
+  display: none;
+}
 
 

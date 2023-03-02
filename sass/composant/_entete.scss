@@ -37,7 +37,7 @@
         a {
           padding : 3px 5px;
           text-decoration: none;
-          color: #242F40;
+          color: black;
           font-size: 1.2rem;
           font-weight: bold;
         }
@@ -63,10 +63,10 @@
 
     a {
       text-decoration: none;
-      color: #ffffff;
+      color: white;
       display: flex;
       justify-content: center;
-      background-color: #363636;
+      background-color: grey;
       padding: 15px 0 15px 0;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -78,8 +78,8 @@
     justify-content: center;
     margin: 0;
     padding-bottom: 20px;
-    color: #CCA43B;
-    background-color: #242F40;
+    color: white;
+    background-color: black;
   }
 
 }

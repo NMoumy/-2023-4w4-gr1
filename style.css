@@ -374,13 +374,12 @@ p {
 }
 
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
-/* Liste */
+/* ----------------------------  la liste */
 ul, ol {
-  background-color: white;
   margin: 0rem 0rem;
   padding: 7px;
   font-size: 1.1rem;
-  color: #656839;
+  color: #000000;
   font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 400px) {
@@ -401,44 +400,87 @@ ol > li {
   margin: 0.5rem 0rem;
 }
 
-/* ----------------------------  pre */
-pre {
-  background: #312e14;
-  color: white;
-  overflow-x: scroll;
+/* ----------------------------  le texte */
+/*h1 {
+
+}*/
+h2 {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
 }
 
-pre::-webkit-scrollbar {
-  background-color: #BDDBD0;
+h3 {
+  color: #ffffff;
 }
 
-pre::-webkit-scrollbar-thumb {
-  background-color: #656839;
+/*h4 {
+
+}
+h5 {
+
+}
+h5 {
+
+}
+h6 {
+
+}*/
+p {
+  color: rgb(0, 0, 0);
 }
 
-hr {
-  display: none;
-}
-
+/* ----------------------------  texte italique et gras */
 strong {
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
 
-/*
-Voici une liste de balises HTML5 couramment utilisées pour la transformation d'un fichier Markdown en HTML :
-h1 - h6 : les en-têtes de niveau 1 à 6
-p : les paragraphes
-strong ou b : le texte en gras
-em ou i : le texte en italique
-a : les liens hypertexte
-img : les images
-ul et li : les listes à puces
-ol et li : les listes numérotées
-code : le texte en code
-blockquote : les citations
-hr : la ligne de séparation horizontale
-*/
+/*i {
+
+}*/
+/* ----------------------------  les liens hypertexte */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(4, 97, 123);
+}
+
+/* ----------------------------  pre */
+pre {
+  background: black;
+  color: white;
+  overflow-x: scroll;
+}
+
+/*la barre de defilement*/
+pre::-webkit-scrollbar {
+  background-color: grey;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+/*le texte en code*/
+/*code {
+
+}*/
+/* ----------------------------  image */
+/*img {
+
+}*/
+/* ----------------------------  les citations et la ligne de separation */
+/*blockquote {
+
+}*/
+hr {
+  display: none;
+}
+
 /* --------------------------------------------- composant */
 .site__entete {
   /* ///////////////////////////////////// entete barre de navigation */
@@ -471,7 +513,7 @@ hr : la ligne de séparation horizontale
 .site__entete .menu__entete .menu .menu-item a {
   padding: 3px 5px;
   text-decoration: none;
-  color: #242F40;
+  color: black;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -488,10 +530,10 @@ hr : la ligne de séparation horizontale
 }
 .site__entete .site__titre a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   display: flex;
   justify-content: center;
-  background-color: #363636;
+  background-color: grey;
   padding: 15px 0 15px 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -500,49 +542,22 @@ hr : la ligne de séparation horizontale
   justify-content: center;
   margin: 0;
   padding-bottom: 20px;
-  color: #CCA43B;
-  background-color: #242F40;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: white;
+  background-color: black;
 }
 
 main h1 {
-  background-color: #656839;
-  color: white;
-  padding: 5px 80px 5px 80px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-main .dans__article {
-  width: 80%;
-  padding: 2rem;
-  background-color: #ffffff;
-}
-main .dans__article h3 {
-  color: #312e14;
-  padding-bottom: 1rem;
-}
-main .dans__article h2 {
-  color: white;
-  font-size: 2rem;
-  padding: 1.2rem;
-  background-color: #656839;
-}
-main .dans__article p {
-  color: rgb(0, 0, 0);
-}
-main .dans__article a {
-  text-decoration: none;
+  background-color: rgb(167, 167, 167);
   color: black;
-}
-main .dans__article a:hover {
-  color: rgb(4, 97, 123);
+  padding: 5px 80px 5px 80px;
 }
 
+.site__main .dans__article {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #ff0202;
+}
 .blocflex {
   display: flex;
   justify-content: space-between;
@@ -552,24 +567,23 @@ main .dans__article a:hover {
   flex: 1 0 250px;
   padding: 10px;
   margin: 20px;
-  border: 1px solid #97aea5;
+  border: 1px solid black;
   font-size: 1rem;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: all ease 1s;
 }
 .blocflex article a {
   text-decoration: none;
   font-size: 1rem;
-  color: #514B23;
+  color: black;
 }
 .blocflex article h3 {
-  color: #242110;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
 .blocflex article:hover {
-  background-color: #9dbaaf;
+  background-color: grey;
 }
 
 main h2 {
@@ -654,17 +668,20 @@ Mise en page généra;e avec display:grid
 
 .site__main {
   grid-area: main;
-  background-color: #F3D3BD;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: #48E5C2;
+  background-color: rgb(61, 61, 61);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #5E5E5E;
+  background-color: white;
 }
 
 .site {
