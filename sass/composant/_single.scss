@@ -1,18 +1,22 @@
 .site__main{
 
   .dans__article {
-    background-color: #ccc5b9;
-
+    background-color: #fffcf2;
+    border: 1px solid #ccc5b9;
+    padding: 2rem;
+    margin-bottom: 5px;
     h3 {
       // color: #312e14;
       // padding-bottom: 1rem;
+      color: #403d39;
     }
 
     h2 {
       // color: white;
       // font-size: 2rem;
       // padding: 1.2rem;
-      // background-color: #656839;
+      background-color: #403d39;
+      color: #fffcf2;
     }
 
   }

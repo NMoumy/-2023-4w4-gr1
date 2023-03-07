@@ -5,8 +5,8 @@
   *
   */
   $titre = get_the_title();
-  // retirer le premier zero du titre d'article de catégorie note-4w4
-  /*if(substr($titre,0,1) == '0') {}*/
+  // retirer le premier du titre d'article de catégorie note-4w4
+  // if (substr($titre,0,1) == '0') {}...
 ?>
 <article class="blocflex__article">
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>

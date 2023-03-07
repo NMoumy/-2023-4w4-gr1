@@ -45,14 +45,14 @@ ol > li{
   
 }*/
 h2 {
-  color: rgb(255, 0, 0);
+  // color: rgb(255, 0, 0);
   font-size: 2rem;
   // padding: 1.2rem;
 }
-h3 {
-  color: #ffffff;
-  // padding-bottom: 1rem;
-}
+// h3 {
+//   // color: #ffffff;
+//   // padding-bottom: 1rem;
+// }
 /*h4 {
 
 }
@@ -61,10 +61,10 @@ h5 {
 }
 h5 {
 
-}
-h6 {
-
 }*/
+h6 {
+  color: #fffcf2;
+}
 
 p {
   color: rgb(0, 0, 0);
@@ -86,7 +86,7 @@ a {
   color: black;
 }
 a:hover {
-  color: rgb(4, 97, 123);
+  color: rgb(1, 184, 105);
 }
 
 /* ----------------------------  pre */
