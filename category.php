@@ -25,8 +25,9 @@
                 // sur la nouvelle requête de contenue dans wp_query
                 if ( $query->have_posts() ) :
                     while ( $query->have_posts() ) : $query->the_post(); 
+                    if(!in_category('galerie')) {
                         get_template_part( 'template-parts/categorie', $category->slug );
-                
+                    } 
                     ?>
                     <?php endwhile; ?>
                 <?php endif;
