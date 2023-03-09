@@ -21,7 +21,7 @@
         height: auto;
       }
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: $largeur__bureau) {
         flex-direction: row;
       }
     }
