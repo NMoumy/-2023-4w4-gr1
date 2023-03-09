@@ -15,13 +15,21 @@
 <body class="site <?= is_front_page() ? "no-aside" : "" ?>">
     <header class="site__entete">
         <div class="entete__nav">
-            <div class="menu__logo">
-                <?php the_custom_logo(); ?>
-                <?php wp_nav_menu(array(
-                                    "menu" => "entete",
-                                    "container" => "nav",
-                                    "container_class" => "menu__entete", //pour changer le nom de la class
-                )); ?>
+            <div class="nav__logo">
+                <div class="menu__logo">
+                    <?php the_custom_logo(); ?>
+                </div>
+                <div class="menu__nav">
+                    <input id="cc__bouton__burger" type="checkbox" />
+                    <label class='bouton__burger__conteneur' for="cc__bouton__burger">
+                        <div class='bouton__burger'></div>
+                    </label>
+                    <?php wp_nav_menu(array(
+                                        "menu" => "entete",
+                                        "container" => "nav",
+                                        "container_class" => "menu__entete", //pour changer le nom de la class
+                    )); ?>
+                </div>
             </div>
             <?= get_search_form(); ?>
         </div>

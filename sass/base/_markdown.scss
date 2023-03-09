@@ -45,9 +45,8 @@ ol > li{
   
 }*/
 h2 {
-  // color: rgb(255, 0, 0);
   font-size: 2rem;
-  // padding: 1.2rem;
+
 }
 /*h3 {
 
@@ -93,6 +92,9 @@ pre {
   background: black;
   color: white;
   overflow-x: scroll;
+  align-self: center;
+  width: 60rem;
+  padding: 20px;
 }
 /*la barre de defilement*/
 pre::-webkit-scrollbar {

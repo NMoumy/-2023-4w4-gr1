@@ -5,19 +5,19 @@
     border: 1px solid #ccc5b9;
     padding: 2rem;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     h3 {
-      // color: #312e14;
-      // padding-bottom: 1rem;
       color: #403d39;
     }
 
     h2 {
-      // color: white;
-      // font-size: 2rem;
-      // padding: 1.2rem;
       background-color: #403d39;
       color: #fffcf2;
     }
 
   }
+  
 }
