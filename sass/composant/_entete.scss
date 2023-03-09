@@ -1,31 +1,39 @@
 .site__entete{ // entete du site
-
+  
   /* ///////////////////////////////////// entete barre de navigation */
   .entete__nav { // barre de navigation
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    // align-items: flex-start;
     background-color: #fffcf2;
     // padding: 0 10px 0 10px;
 
+    @media screen and (min-width : $largeur__bureau) {
+      flex-direction: row;
+    }
     
     .menu__logo { // logo dans entete
+      align-self: flex-start;
       .custom-logo-link img { // logo
         width: 85px;
         height: auto;
-        padding-left: 20px;
+        padding-top: 10px;
+
+        @media screen and (min-width : $largeur__bureau) {
+          padding-left: 20px;
+        }
+
       }
 
     }
 
     .menu__nav__recherche { // nav avec bouton burger et recherche
-      background-color: #f1b900;
-      // margin-right: 10px;
       display : flex;
       flex-direction: column;
       align-items: center;
-       justify-content: center;
+      justify-content: center;
+      align-self: center;
 
       @media screen and (min-width : $largeur__bureau) {
           flex-direction: row;
@@ -36,7 +44,6 @@
       /* ////////////////////////////// menu entete */
       .menu__entete { // nav
         display: none;
-
         @media screen and (min-width : $largeur__bureau) {
           display: flex;
         }
@@ -71,6 +78,10 @@
           }
 
         } // FIN ul
+
+        div .barre__recherche{
+          align-self: flex-end;
+        }
     
       } // FIN navigation
 
@@ -82,9 +93,11 @@
 
       .bouton__burger__conteneur {
         padding: 20px;
+
         @media screen and (min-width:$largeur__bureau) {
           display: none;
-      }
+        }
+        
       }
       .bouton__burger__conteneur div {
         position: relative;

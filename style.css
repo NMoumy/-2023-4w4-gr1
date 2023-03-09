@@ -492,20 +492,32 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   background-color: #fffcf2;
+}
+@media screen and (min-width: 1000px) {
+  .site__entete .entete__nav {
+    flex-direction: row;
+  }
+}
+.site__entete .entete__nav .menu__logo {
+  align-self: flex-start;
 }
 .site__entete .entete__nav .menu__logo .custom-logo-link img {
   width: 85px;
   height: auto;
-  padding-left: 20px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .site__entete .entete__nav .menu__logo .custom-logo-link img {
+    padding-left: 20px;
+  }
 }
 .site__entete .entete__nav .menu__nav__recherche {
-  background-color: #f1b900;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: center;
   /* ////////////////////////////// menu entete */
   /* ////////////////////////////// bouton burger */
 }
@@ -549,6 +561,9 @@ hr {
   color: #252422;
   font-size: 1.2rem;
   font-weight: bold;
+}
+.site__entete .entete__nav .menu__nav__recherche .menu__entete div .barre__recherche {
+  align-self: flex-end;
 }
 .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger {
   display: none;
@@ -723,12 +738,12 @@ main h2 {
 }
 .recherche .recherche__icone {
   background-color: white;
-  padding: 0.5rem;
+  padding: 10px;
   border-radius: 50%;
-  border: 1px solid #000000;
+  border: 1px solid #ccc5b9;
 }
 .recherche .recherche__icone:hover {
-  background-color: #b0b0b0;
+  background-color: #f9f4e4;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 

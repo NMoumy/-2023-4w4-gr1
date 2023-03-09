@@ -30,10 +30,12 @@
                                     "container" => "nav",
                                     "container_class" => "menu__entete", //pour changer le nom de la class
                 )); ?>
-                <?= get_search_form(); ?>
+                <div class="barre__recherche">
+                    <?= get_search_form(); ?>
+                </div>
+
             </div>
         </div>
-
         <h1 class="site__titre"><a href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
         <h2 class="site__sous__titre"><?= bloginfo('description'); ?></h2>
 
