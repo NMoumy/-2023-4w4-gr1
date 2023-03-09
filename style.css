@@ -529,18 +529,11 @@ hr {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item::before {
-  content: "";
-  background: transparent;
-  border-radius: 0;
-  padding-inline: 0;
-  margin-inline-end: 0;
-}
 .site__entete .entete__nav .menu__nav .bouton__burger,
 .site__entete .entete__nav .menu__nav .bouton__burger::before,
 .site__entete .entete__nav .menu__nav .bouton__burger::after {
   display: block;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 115, 0);
   position: absolute;
   height: 4px;
   width: 30px;
