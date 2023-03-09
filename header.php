@@ -15,23 +15,23 @@
 <body class="site <?= is_front_page() ? "no-aside" : "" ?>">
     <header class="site__entete">
         <div class="entete__nav">
-            <div class="nav__logo">
-                <div class="menu__logo">
-                    <?php the_custom_logo(); ?>
-                </div>
-                <div class="menu__nav">
-                    <input id="cc__bouton__burger" type="checkbox" />
-                    <label class='bouton__burger__conteneur' for="cc__bouton__burger">
-                        <div class='bouton__burger'></div>
-                    </label>
-                    <?php wp_nav_menu(array(
-                                        "menu" => "entete",
-                                        "container" => "nav",
-                                        "container_class" => "menu__entete", //pour changer le nom de la class
-                    )); ?>
-                </div>
+            <div class="menu__logo">
+                <?php the_custom_logo(); ?>
             </div>
-            <?= get_search_form(); ?>
+            <div class="menu__nav__recherche">
+                <input id="cc__bouton__burger" type="checkbox" />
+                <label class='bouton__burger__conteneur' for="cc__bouton__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <?php wp_nav_menu(array(
+                                    "menu" => "entete",
+                                    "container" => "nav",
+                                    "container_class" => "menu__entete", //pour changer le nom de la class
+                )); ?>
+                <?= get_search_form(); ?>
+            </div>
         </div>
 
         <h1 class="site__titre"><a href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>

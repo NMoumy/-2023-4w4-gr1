@@ -1,6 +1,4 @@
 .site__entete{ // entete du site
-  // display: flex;
-  // flex-direction: column;
 
   /* ///////////////////////////////////// entete barre de navigation */
   .entete__nav { // barre de navigation
@@ -9,39 +7,60 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fffcf2;
-    padding: 0 10px 0 10px;
+    // padding: 0 10px 0 10px;
 
-    .nav__logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
+    
+    .menu__logo { // logo dans entete
       .custom-logo-link img { // logo
         width: 85px;
         height: auto;
+        padding-left: 20px;
       }
 
-      // @media screen and (min-width: $largeur__bureau) {
-      //   flex-direction: row;
-      // }
     }
-    .menu__nav{
-      display: flex;
+
+    .menu__nav__recherche { // nav avec bouton burger et recherche
+      background-color: #f1b900;
+      // margin-right: 10px;
+      display : flex;
+      flex-direction: column;
       align-items: center;
+       justify-content: center;
+
+      @media screen and (min-width : $largeur__bureau) {
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+      }
 
       /* ////////////////////////////// menu entete */
       .menu__entete { // nav
         display: none;
 
+        @media screen and (min-width : $largeur__bureau) {
+          display: flex;
+        }
+
         .menu { // ul
           display: flex;
           list-style-type: none;
-          justify-content: flex-end;
+          flex-direction: column;
           padding-right: 20px;
           gap: 1.2rem;
           padding: 10px;
+          top: 3rem;
+          right:0;
+
+          @media screen and (min-width:$largeur__bureau) {
+            position : static;
+            top: auto;
+            right:auto;
+            flex-direction: row;
+            transform : translateX(0);
+        }
     
-          .menu-item { // li 
+          .menu-item { // li
+
             a {
               padding : 3px 5px;
               text-decoration: none;
@@ -50,96 +69,54 @@
               font-weight: bold;
             }
           }
-          // .menu-item::before { // si decoration personnaliser
-          //   content: "";
-          //   background: transparent;
-          //   border-radius: 0;
-          //   padding-inline: 0;
-          //   margin-inline-end: 0;
-          // }
-        }
+
+        } // FIN ul
     
-      }
+      } // FIN navigation
 
       /* ////////////////////////////// bouton burger */
-      .bouton__burger,
-      .bouton__burger::before,
-      .bouton__burger::after {
-        display: block;
-        background-color: rgb(255, 115, 0);
-        position: absolute;
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
-      }
-
-      .bouton__burger::before {
-        content: '';
-        margin-top: -8px;
-      }
-
-      .bouton__burger::after {
-        content: '';
-        margin-top: 8px;
-      }
 
       #cc__bouton__burger {
         display: none;
       }
+
+      .bouton__burger__conteneur {
+        padding: 20px;
+        @media screen and (min-width:$largeur__bureau) {
+          display: none;
+      }
+      }
+      .bouton__burger__conteneur div {
+        position: relative;
+        top: 0;
+        height: 5px;
+        background-color: #252422;
+        margin-bottom: 6px;
+        transition: 0.3s ease;
+        // transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+        border-radius: 2px;
+      }
+
+      .bouton__burger__conteneur div:first-child {
+        transform-origin: 0;
+      }
+      .bouton__burger__conteneur div:last-child {
+        margin-bottom: 0;
+        transform-origin: 60px;
+      }
+      .bouton__burger__conteneur div:nth-child(2) {
+        right: 0;
+        width: 30px;
+      }
+
+      // menu burger checker
       #cc__bouton__burger:checked ~ .menu__entete {
         display: flex;
       }
 
-      // menu burger checker
-      #cc__bouton__burger:checked + .bouton__burger__conteneur .bouton__burger::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-      }
-      #cc__bouton__burger:checked + .bouton__burger__conteneur .bouton__burger {
-        background: rgba(255, 255, 255, 0);
-        margin-top: 20px;
-      }
-      #cc__bouton__burger:checked + .bouton__burger__conteneur .bouton__burger::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
-      }
+    } // FIN nav avec bouton burger
 
-    }
-
-  }
-
-  // .menu__entete { // nav
-
-  //   .menu { // ul
-  //     display: flex;
-  //     list-style-type: none;
-  //     justify-content: flex-end;
-  //     padding-right: 20px;
-  //     gap: 1.2rem;
-  //     padding: 10px;
-
-  //     .menu-item { // li 
-  //       a {
-  //         padding : 3px 5px;
-  //         text-decoration: none;
-  //         color: #252422;
-  //         font-size: 1.2rem;
-  //         font-weight: bold;
-  //       }
-  //     }
-
-  //     .menu-item::before {
-  //       content: "";
-  //       background: transparent;
-  //       border-radius: 0;
-  //       padding-inline: 0;
-  //       margin-inline-end: 0;
-  //     }
-
-  //   }
-
-  // }
+  } // FIN barre de navigation
 
   /* ///////////////////////////////////// titre entete */
 
@@ -168,4 +145,4 @@
     background-color: #ccc5b9;
   }
 
-}
+} // FIN sit entete

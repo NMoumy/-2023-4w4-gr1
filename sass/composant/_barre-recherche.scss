@@ -1,19 +1,21 @@
 .recherche {
+  padding: 10px 10px 10px 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 3px;
+  margin-bottom: 5px;
 
   .barre__recherche {
-    opacity: 0;
-    transition: opacity 1s;
-  
+    display: none;
+
     .recherche__input {
       border: none;
       background-color: #252422;
       color: #fffcf2;
       padding: 1rem;
-      border-radius: 5px;
+      border-radius: 10px;
     }
 
     .recherche__input::placeholder {
@@ -37,6 +39,7 @@
     padding: 0.5rem;
     border-radius: 50%;
     border: 1px solid #000000;
+
   }
 
   .recherche__icone:hover {
@@ -51,5 +54,5 @@
 }
 
 .check:checked + .barre__recherche { //si le checkbox est checker
-  opacity: 1;
+  display: flex;
 }
