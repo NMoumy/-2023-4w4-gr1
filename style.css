@@ -518,6 +518,8 @@ hr {
   align-items: center;
   justify-content: center;
   align-self: center;
+  background-color: #ebb128;
+  border-left: 5px solid #252422;
   /* ////////////////////////////// menu entete */
   /* ////////////////////////////// bouton burger */
 }
@@ -526,6 +528,9 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    padding-top: 10px;
+    border-left: none;
+    background-color: #fffcf2;
   }
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete {

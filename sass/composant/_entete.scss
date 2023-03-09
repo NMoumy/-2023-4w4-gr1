@@ -1,5 +1,5 @@
 .site__entete{ // entete du site
-  
+
   /* ///////////////////////////////////// entete barre de navigation */
   .entete__nav { // barre de navigation
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: space-between;
     // align-items: flex-start;
     background-color: #fffcf2;
-    // padding: 0 10px 0 10px;
+    // padding: 0 10px 0 10px;  
 
     @media screen and (min-width : $largeur__bureau) {
       flex-direction: row;
@@ -34,11 +34,17 @@
       align-items: center;
       justify-content: center;
       align-self: center;
+      background-color: #ebb128;
+      border-left: 5px solid #252422;
+
 
       @media screen and (min-width : $largeur__bureau) {
           flex-direction: row;
           align-items: center;
           justify-content: flex-end;
+          padding-top: 10px;
+          border-left: none;
+          background-color: #fffcf2;
       }
 
       /* ////////////////////////////// menu entete */
@@ -97,7 +103,7 @@
         @media screen and (min-width:$largeur__bureau) {
           display: none;
         }
-        
+
       }
       .bouton__burger__conteneur div {
         position: relative;

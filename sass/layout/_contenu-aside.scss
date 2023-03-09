@@ -4,8 +4,6 @@ Mise en page généra;e avec display:grid
 
 .site__entete {
   grid-area: header;
-  // padding: 1rem clamp(1rem, 3vw, 20rem);
-  // background-color: rgb(255, 255, 255);
 }
 
 .site__main {
