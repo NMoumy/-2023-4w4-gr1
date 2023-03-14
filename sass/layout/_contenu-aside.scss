@@ -33,7 +33,10 @@ Mise en page généra;e avec display:grid
     color: #fffcf2;
     display: inline;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    @media screen and (min-width: $largeur__bureau) {
+      font-size: 2rem;
+    }
   }
 
   li {

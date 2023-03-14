@@ -1,10 +1,15 @@
 
 <footer class="site__footer">
- <section class="lien">lien #1</section>
- <section class="lien">lien #2</section>
- <section class="lien">lien #3</section>
+  <div class="footer__logo">
+      <?php the_custom_logo(); ?>
+  </div>
+  <?php wp_nav_menu(array(
+    "menu" => "footer",
+    "container" => "nav",
+    "container_class" => "menu__footer"
+  )); ?>
+ <a href= "https://cidweb37.sg-host.com/"  title= "Mentions Légales" >Mentions Légales</a> 
 </footer>
   <?php wp_footer(); ?>
-
 </body>
 </html>

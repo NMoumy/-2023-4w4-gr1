@@ -20,7 +20,6 @@ Text Domain: 4w4-moumy-ndiaye
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -358,7 +357,6 @@ h1 {
 
 h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-family: "Slackey", cursive; */
 }
 
 h3,
@@ -370,7 +368,11 @@ h6 {
 }
 
 p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
@@ -643,7 +645,6 @@ hr {
   padding-bottom: 20px;
   color: #403d39;
   background-color: #ccc5b9;
-  border-top: 1px solid #615c55;
 }
 
 .site__main h3 {
@@ -794,6 +795,65 @@ main h2 {
 
 /*ajouter logo comme dans entete*/
 /*wp_nav menu pour ajouter les resaux sociaux*/
+.site__footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    flex-direction: row;
+  }
+}
+.site__footer .footer__logo .custom-logo-link img {
+  width: 85px;
+  height: auto;
+}
+.site__footer .menu__footer li {
+  list-style-type: none;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu-item a {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-cours-container .menu-item a code {
+  font-weight: bold;
+}
+.menu-cours-container .menu-item a p {
+  display: none;
+  color: #fffcf2;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu-item a p {
+    display: block;
+  }
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page généra;e avec display:grid
@@ -826,7 +886,12 @@ Mise en page généra;e avec display:grid
   color: #fffcf2;
   display: inline;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside h3 {
+    font-size: 2rem;
+  }
 }
 .site__aside li {
   list-style: none;
