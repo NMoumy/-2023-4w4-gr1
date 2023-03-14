@@ -378,20 +378,22 @@ p {
 ul, ol {
   margin: 0rem 0rem;
   padding: 7px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #000000;
   font-family: "Roboto", sans-serif;
-}
-@media screen and (min-width: 400px) {
-  ul, ol {
-    margin: 1rem 0.5rem;
-    padding: 10px;
-  }
 }
 @media screen and (min-width: 700px) {
   ul, ol {
     margin: 1rem 0.5rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  ul, ol {
+    margin: 1rem 0.5rem;
     padding: 13px;
+    font-size: 1.1rem;
   }
 }
 
@@ -405,13 +407,24 @@ ol > li {
 
 }*/
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
-/*h3 {
-
+h3 {
+  font-size: 1.5rem;
 }
-h4 {
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+/*h4 {
 
 }
 h5 {
@@ -426,6 +439,7 @@ h6 {
 
 p {
   color: rgb(0, 0, 0);
+  font-size: 1.1rem;
 }
 
 /* ----------------------------  texte italique et gras */
@@ -453,8 +467,13 @@ pre {
   color: white;
   overflow-x: scroll;
   align-self: center;
-  width: 60rem;
-  padding: 20px;
+  width: 25rem;
+  padding: 10px;
+}
+@media screen and (min-width: 1000px) {
+  pre {
+    width: 60rem;
+  }
 }
 
 /*la barre de defilement*/
@@ -518,8 +537,8 @@ hr {
   align-items: center;
   justify-content: center;
   align-self: center;
-  background-color: #ebb128;
-  border-left: 5px solid #252422;
+  background-color: #ccc5b9;
+  border-left: 3px solid #a39a8a;
   /* ////////////////////////////// menu entete */
   /* ////////////////////////////// bouton burger */
 }
@@ -624,6 +643,7 @@ hr {
   padding-bottom: 20px;
   color: #403d39;
   background-color: #ccc5b9;
+  border-top: 1px solid #615c55;
 }
 
 .site__main h3 {
@@ -637,7 +657,7 @@ hr {
 .site__main .dans__article {
   background-color: #fffcf2;
   border: 1px solid #ccc5b9;
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
@@ -760,8 +780,16 @@ main h2 {
   display: flex;
 }
 
-h1 {
-  background-color: rgb(255, 0, 0);
+.site__erreur {
+  background-color: rgb(200, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site__erreur h1 {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  display: inline;
 }
 
 /*ajouter logo comme dans entete*/
@@ -796,6 +824,9 @@ Mise en page généra;e avec display:grid
 }
 .site__aside h3 {
   color: #fffcf2;
+  display: inline;
+  text-align: center;
+  font-size: 2rem;
 }
 .site__aside li {
   list-style: none;
