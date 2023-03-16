@@ -1,15 +1,20 @@
-.site__footer {// pied de page du site
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.site__footer { // pied de page du site
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 30px 5px 30px;
   background-color: #ccc5b9;
   border-top: 2px solid #c6beb0;
   
   @media screen and (min-width: $largeur__bureau) {
     flex-direction: row;
+    align-items: flex-start;
+  }
+
+  h4{
+    color: #ffffff;
+    font-size: 1.3rem;
   }
 
   .footer__logo { // logo
@@ -19,14 +24,27 @@
     }
   }
 
+  div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .menu__footer { // lien et menu du footer
     li {
       list-style-type: none;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media screen and (min-width: $largeur__bureau) {
+        flex-direction: row;
+      }
 
       a {
         color: #252422;
-        font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
     }
@@ -42,6 +60,7 @@
       li {
         padding-right: 10px;
       }
+
     }
 
     img {
