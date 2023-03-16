@@ -28,17 +28,18 @@ Mise en page généra;e avec display:grid
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-
-  h3{
+  h3 {
     color: #fffcf2;
     display: inline;
     text-align: center;
     font-size: 1.3rem;
-    @media screen and (min-width: $largeur__bureau) {
+    @media screen and (min-width: $largeur__tablette) {
+      font-size: 1.4rem;
+    }
+    @media screen and (min-width: $largeur__tablette) {
       font-size: 2rem;
     }
   }
-
   li {
     list-style: none;
     display: flex;
@@ -51,6 +52,7 @@ Mise en page généra;e avec display:grid
   }
 
 }
+
 .site__footer {
   grid-area: footer;
   background-color: #ccc5b9;

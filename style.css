@@ -696,8 +696,13 @@ hr {
   color: rgb(253, 253, 253);
 }
 .blocflex__article h6 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #fffcf2;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex__article h6 {
+    font-size: 1.3rem;
+  }
 }
 .blocflex__article p {
   color: #dddddd;
@@ -739,6 +744,9 @@ main h2 {
   text-decoration: none;
   font-size: 1rem;
   color: #fffcf2;
+}
+.recherche__section article:hover {
+  background-color: #403d39;
 }
 
 .recherche {
@@ -843,6 +851,7 @@ main h2 {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
+    padding: 3px;
   }
 }
 .menu-cours-container .menu-item a code {
@@ -855,6 +864,34 @@ main h2 {
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu-item a p {
     display: block;
+  }
+}
+
+.menu-note-4w4-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-note-4w4-container .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu-item a {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 3px;
   }
 }
 
@@ -892,7 +929,12 @@ Mise en page généra;e avec display:grid
   text-align: center;
   font-size: 1.3rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
+  .site__aside h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 700px) {
   .site__aside h3 {
     font-size: 2rem;
   }

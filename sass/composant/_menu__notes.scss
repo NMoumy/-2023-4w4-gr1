@@ -1,16 +1,18 @@
-.menu-cours-container {
-  .menu {
+.menu-note-4w4-container {
+  .menu { // ul
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
     @media screen and (min-width:$largeur__bureau) {
       flex-direction: column;
     }
     
   }
-  
-  .menu-item {
+
+  .menu-item { // li
+
     a {
       display: flex;
       flex-direction: row;
@@ -26,19 +28,7 @@
         padding: 3px;
       }
 
-      code {
-        font-weight: bold;
-      }
-
-      p {
-        display: none;
-        color: #fffcf2;
-        @media screen and (min-width:$largeur__bureau) {
-          display: block;
-        }
-      }
-
     }
-
   }
+  
 }
