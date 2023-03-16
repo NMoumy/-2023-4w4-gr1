@@ -746,7 +746,7 @@ main h2 {
 }
 .recherche .barre__recherche .recherche__input:focus {
   outline: none;
-  background-color: white;
+  background-color: #252422;
 }
 .recherche .recherche__icone {
   background-color: white;
