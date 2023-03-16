@@ -6,7 +6,14 @@
   */
   $titre = get_the_title();
   $sigle = substr($titre, 0, 7);
-  $titre_long = substr($titre, 7, -5);// il faut enlever la duree avec un moins
+  $titre = get_the_title();
+  if (substr($titre,7, -6) == '(') {
+    $titre_long = substr($titre, 7, -6);
+  }
+  else{
+    $titre_long = substr($titre, 7, -5);
+  }
+  // $titre_long = substr($titre, 7, -5);// il faut enlever la duree avec un moins
   $duree = "90"; //ajouer le titre et le nb d'heure
 ?>
 

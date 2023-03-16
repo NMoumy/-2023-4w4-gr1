@@ -8,7 +8,7 @@
     "container" => "nav",
     "container_class" => "menu__footer"
   )); ?>
- <a href= "https://cidweb37.sg-host.com/"  title= "Mentions Légales" >Mentions Légales</a> 
+ <a href= "https://cidweb37.sg-host.com/"  title= "lien wordpress" >Lien wordpress</a> 
 </footer>
   <?php wp_footer(); ?>
 </body>
