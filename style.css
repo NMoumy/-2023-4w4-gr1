@@ -375,7 +375,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-/* Les balise qu'on utilse dans la conversion des fichiers markdown */
 /* ----------------------------  la liste */
 ul, ol {
   margin: 0rem 0rem;
@@ -405,9 +404,6 @@ ol > li {
 }
 
 /* ----------------------------  le texte */
-/*h1 {
-
-}*/
 h2 {
   font-size: 1.2rem;
 }
@@ -426,15 +422,6 @@ h3 {
   }
 }
 
-/*h4 {
-
-}
-h5 {
-
-}
-h5 {
-
-}*/
 h6 {
   color: #fffcf2;
 }
@@ -444,15 +431,12 @@ p {
   font-size: 1.1rem;
 }
 
-/* ----------------------------  texte italique et gras */
+/* ----------------------------  texte gras */
 strong {
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
 
-/*i {
-
-}*/
 /* ----------------------------  les liens hypertexte */
 a {
   text-decoration: none;
@@ -488,18 +472,7 @@ pre::-webkit-scrollbar-thumb {
   outline: 1px solid rgb(0, 0, 0);
 }
 
-/*le texte en code*/
-/*code {
-
-}*/
-/* ----------------------------  image */
-/*img {
-
-}*/
-/* ----------------------------  les citations et la ligne de separation */
-/*blockquote {
-
-}*/
+/* ----------------------------  la ligne de separation */
 hr {
   display: none;
 }
@@ -813,7 +786,9 @@ main h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px 30px 5px 30px;
+  background-color: #ccc5b9;
+  border-top: 2px solid #c6beb0;
 }
 @media screen and (min-width: 1000px) {
   .site__footer {
@@ -826,6 +801,22 @@ main h2 {
 }
 .site__footer .menu__footer li {
   list-style-type: none;
+}
+.site__footer .menu__footer li a {
+  color: #252422;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.site__footer .social__media .menu {
+  list-style: none;
+  display: flex;
+}
+.site__footer .social__media .menu li {
+  padding-right: 10px;
+}
+.site__footer .social__media img {
+  width: 40px;
+  height: auto;
 }
 
 .menu-cours-container .menu {
@@ -950,7 +941,6 @@ Mise en page généra;e avec display:grid
 
 .site__footer {
   grid-area: footer;
-  background-color: #ccc5b9;
 }
 
 .site {

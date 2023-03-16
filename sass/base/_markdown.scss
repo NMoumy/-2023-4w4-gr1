@@ -1,4 +1,3 @@
-/* Les balise qu'on utilse dans la conversion des fichiers markdown */
 
 /* ----------------------------  la liste */
 ul,ol{
@@ -27,25 +26,8 @@ ol > li{
   margin: 0.5rem 0rem;
 }
 
-// ul li::before {
-//   content: "☀";
-//   background: rgb(0, 0, 0);
-//   border-radius: .5rem;
-//   padding-inline: .3rem;
-//   margin-inline-end: .3rem;
-// }
-// ul li li::before
-// {
-//   background: transparent;
-// }
-
-// ul>li {}
-// ol>li {}
-
 /* ----------------------------  le texte */
-/*h1 {
-  
-}*/
+
 h2 {
   font-size: 1.2rem;
   @media screen and (min-width: $largeur__bureau) {
@@ -58,15 +40,7 @@ h3 {
     font-size: 3rem;
   }
 }
-/*h4 {
 
-}
-h5 {
-
-}
-h5 {
-
-}*/
 h6 {
   color: #fffcf2;
 }
@@ -76,15 +50,12 @@ p {
   font-size: 1.1rem;
 }
 
-/* ----------------------------  texte italique et gras */
+/* ----------------------------  texte gras */
 strong {
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
 
-/*i {
-
-}*/
 
 /* ----------------------------  les liens hypertexte */
 a {
@@ -100,11 +71,7 @@ pre {
   background: black;
   color: white;
   overflow-x: scroll;
-  // overflow: hidden;
   align-self: center;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   width: 25rem;
   padding: 10px;
 
@@ -121,21 +88,7 @@ pre::-webkit-scrollbar-thumb {
   outline: 1px solid rgb(0, 0, 0);
 }
 
-/*le texte en code*/
-/*code {
-
-}*/
-
-/* ----------------------------  image */
-/*img {
-  
-}*/
-
-
-/* ----------------------------  les citations et la ligne de separation */
-/*blockquote {
-
-}*/
+/* ----------------------------  la ligne de separation */
 
 hr {
   display: none;

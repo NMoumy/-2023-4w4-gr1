@@ -10,7 +10,7 @@
   $aTrouver = '(';
   $postion = strpos(substr($titre, 7), $aTrouver);
   $titre_long = substr($titre, 7, $postion);
-  $duree = "90"; //ajouer le titre et le nb d'heure
+  $duree = "45";
 ?>
 
 <article class="blocflex__article">
