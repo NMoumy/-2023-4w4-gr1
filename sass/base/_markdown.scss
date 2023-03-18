@@ -1,6 +1,6 @@
 
 /* ----------------------------  la liste */
-ul,ol{
+ul,ol {
   margin: 0rem 0rem;
   padding: 7px;
   font-size: 0.9rem;
@@ -22,7 +22,7 @@ ul,ol{
 }
 
 ul > li,
-ol > li{
+ol > li {
   margin: 0.5rem 0rem;
 }
 
@@ -68,7 +68,7 @@ a:hover {
 
 /* ----------------------------  pre */
 pre {
-  background: black;
+  background: #252422;
   color: white;
   overflow-x: scroll;
   align-self: center;
@@ -77,15 +77,14 @@ pre {
 
   @media screen and (min-width: $largeur__bureau) {
     width: 60rem;
-}
+  }
 }
 /*la barre de defilement*/
 pre::-webkit-scrollbar {
-  background-color: grey;
+  background-color: rgb(237, 237, 237);
 }
 pre::-webkit-scrollbar-thumb {
-  background-color: white;
-  outline: 1px solid rgb(0, 0, 0);
+  background-color: rgb(199, 199, 199);
 }
 
 /* ----------------------------  la ligne de separation */

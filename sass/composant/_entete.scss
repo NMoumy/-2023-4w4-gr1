@@ -72,14 +72,19 @@
         }
     
           .menu-item { // li
-
             a {
               padding : 3px 5px;
               text-decoration: none;
               color: #252422;
               font-size: 1.2rem;
               font-weight: bold;
+              transition: color 1s ease;
             }
+
+            a:hover {
+              color: #e19600;
+            }
+
           }
 
         } // FIN ul
@@ -163,3 +168,5 @@
   }
 
 } // FIN site entete
+
+

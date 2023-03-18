@@ -33,9 +33,14 @@
       p {
         display: none;
         color: #fffcf2;
+        
         @media screen and (min-width:$largeur__bureau) {
           display: block;
         }
+      }
+
+      :hover {
+        color: #e19600;
       }
 
     }

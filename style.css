@@ -449,7 +449,7 @@ a:hover {
 
 /* ----------------------------  pre */
 pre {
-  background: black;
+  background: #252422;
   color: white;
   overflow-x: scroll;
   align-self: center;
@@ -464,12 +464,11 @@ pre {
 
 /*la barre de defilement*/
 pre::-webkit-scrollbar {
-  background-color: grey;
+  background-color: rgb(237, 237, 237);
 }
 
 pre::-webkit-scrollbar-thumb {
-  background-color: white;
-  outline: 1px solid rgb(0, 0, 0);
+  background-color: rgb(199, 199, 199);
 }
 
 /* ----------------------------  la ligne de separation */
@@ -560,6 +559,10 @@ hr {
   color: #252422;
   font-size: 1.2rem;
   font-weight: bold;
+  transition: color 1s ease;
+}
+.site__entete .entete__nav .menu__nav__recherche .menu__entete .menu .menu-item a:hover {
+  color: #e19600;
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete div .barre__recherche {
   align-self: flex-end;
@@ -663,10 +666,14 @@ hr {
   transition: all ease 1s;
   cursor: pointer;
 }
-.blocflex__article a {
-  text-decoration: none;
+.blocflex__article h5 {
   font-size: 1rem;
-  color: rgb(253, 253, 253);
+  color: #fffcf2;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex__article h5 {
+    font-size: 1.2rem;
+  }
 }
 .blocflex__article h6 {
   font-size: 1.1rem;
@@ -822,6 +829,10 @@ main h2 {
   color: #252422;
   font-size: 0.9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease;
+}
+.site__footer .menu__footer li a:hover {
+  color: #ea6d00;
 }
 .site__footer .social__media .menu {
   list-style: none;
@@ -873,6 +884,9 @@ main h2 {
     display: block;
   }
 }
+.menu-cours-container .menu-item a :hover {
+  color: #e19600;
+}
 
 .menu-note-4w4-container .menu {
   display: flex;
@@ -900,6 +914,9 @@ main h2 {
     flex-wrap: nowrap;
     padding: 3px;
   }
+}
+.menu-note-4w4-container .menu-item a:hover {
+  color: #e19600;
 }
 
 /* --------------------------------------------- layout */
