@@ -775,7 +775,7 @@ main h2 {
 }
 
 .site__erreur {
-  background-color: rgb(200, 0, 0);
+  background-color: rgb(72, 72, 72);
   display: flex;
   justify-content: center;
   align-items: center;
