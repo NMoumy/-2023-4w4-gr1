@@ -16,3 +16,11 @@
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
   </a>
 </article>
+
+<?php 
+  // the_execerpt() // echo du résumé du post
+  // the_content() // echo affiche le contenue complet du post
+  // get_... // retourne une chaîne de caractère
+
+
+?>

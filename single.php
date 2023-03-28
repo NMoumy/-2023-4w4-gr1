@@ -11,7 +11,8 @@
             <h3>Bienvenue sur 4W4</h3>
             <?php if(have_posts()): 
                 while(have_posts()): the_post(); ?>
-                <article class="dans__article">
+                <!-- template-part pour single -->
+                <article class="dans__article"> 
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
                 </article>
