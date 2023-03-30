@@ -12,7 +12,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site <?= is_front_page() ? "no-aside" : "" ?>">
+<body class="site <?= (is_front_page() || is_404()) ? "no-aside" : "" ?>">
     <header class="site__entete">
         <div class="entete__nav">
             <div class="menu__logo">
@@ -42,7 +42,7 @@
     </header>
     
     <?php 
-        if(! is_front_page()) {
+        if(! is_front_page() && ! is_404()) {
             get_template_part("template-parts/aside"); 
         }
     ?>
