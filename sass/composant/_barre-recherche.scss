@@ -8,13 +8,12 @@
   margin-bottom: 5px;
 
   .barre__recherche {
-    display: none;
 
     .recherche__input {
       border: none;
       background-color: #252422;
       color: #fffcf2;
-      padding: 1rem;
+      padding: 0.5rem;
       border-radius: 10px;
     }
 
@@ -35,18 +34,18 @@
 
   }
 
-  .recherche__icone {
-    background-color: white;
-    padding: 10px;
-    border-radius: 50%;
-    border: 1px solid #ccc5b9;
+  // .recherche__icone {
+  //   background-color: white;
+  //   padding: 10px;
+  //   border-radius: 50%;
+  //   border: 1px solid #ccc5b9;
 
-  }
+  // }
 
-  .recherche__icone:hover {
-    background-color: #f9f4e4;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  }
+  // .recherche__icone:hover {
+  //   background-color: #f9f4e4;
+  //   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  // }
 
 }
 
@@ -54,6 +53,3 @@
   display: none;
 }
 
-.check:checked + .barre__recherche { //si le checkbox est checker
-  display: flex;
-}
