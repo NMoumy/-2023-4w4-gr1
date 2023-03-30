@@ -779,10 +779,10 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: opacity(0);
+  background-color: rgba(255, 255, 255, 0.803);
 }
 .site__erreur h1 {
-  color: rgb(219, 0, 0);
+  color: rgb(16, 16, 16);
   font-size: 5rem;
   display: inline;
 }
@@ -797,12 +797,13 @@ main h2 {
   flex-direction: row;
   align-items: center;
   margin: 0 1rem 0 1rem;
-  color: rgb(255, 255, 255);
+  color: rgb(24, 24, 24);
 }
 .site__erreur .menu-cours-container .menu-item code, .site__erreur .menu-note-4w4-container .menu-item code {
   font-weight: initial;
 }
 .site__erreur .menu-cours-container .menu-item p, .site__erreur .menu-note-4w4-container .menu-item p {
+  color: rgb(24, 24, 24);
   padding-left: 5px;
 }
 

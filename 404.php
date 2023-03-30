@@ -14,7 +14,7 @@
                 <?= get_search_form(); ?>
             </div>
 
-            <p>Nos choix de cours</p>
+            <h5>Nos choix de cours</h5>
             <?php
                 $menu = "cours";
                     wp_nav_menu(array(
@@ -23,7 +23,7 @@
                     )); 
             ?>
 
-            <p>Nos notes de cours</p>
+            <h5>Nos notes de cours</h5>
             <?php
                 $menu = "note-4w4";
                 wp_nav_menu(array(
