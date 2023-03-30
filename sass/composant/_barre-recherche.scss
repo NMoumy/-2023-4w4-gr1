@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 3px;
   margin-bottom: 5px;
+  opacity: 0.7;
 
   .barre__recherche {
 
@@ -14,7 +14,11 @@
       background-color: #252422;
       color: #fffcf2;
       padding: 0.5rem;
-      border-radius: 10px;
+
+      @media screen and (min-width:$largeur__bureau) {
+        width: 200px;
+      }
+      
     }
 
     .recherche__input::placeholder {
@@ -26,26 +30,15 @@
       background-color: #252422;
     }
 
-    // input::-webkit-search-cancel-button { //pour enlever le x dans la barre de recherche
-    //   // -webkit-appearance: none;
-    //   // content: URL();
-    //   // cursor: pointer;
-    //  }
-
+  }
+  .btn__recherche {
+    border: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    padding: 0.5rem;
+    background-color: #252422;
+    border-radius: none;
   }
 
-  // .recherche__icone {
-  //   background-color: white;
-  //   padding: 10px;
-  //   border-radius: 50%;
-  //   border: 1px solid #ccc5b9;
-
-  // }
-
-  // .recherche__icone:hover {
-  //   background-color: #f9f4e4;
-  //   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  // }
 
 }
 

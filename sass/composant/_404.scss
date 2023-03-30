@@ -3,20 +3,19 @@
   content: "";
 }
 .site__erreur {
-  // background-color: rgb(72, 72, 72);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  backdrop-filter: opacity(0);
 
-
-  
   h1 {
     color: rgb(219, 0, 0);
     font-size: 5rem;
     display: inline;
   }
+
   .menu-cours-container, .menu-note-4w4-container {
     .menu {
       display: flex;
@@ -29,15 +28,17 @@
       a {
         flex-direction: row;
         align-items: center;
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
+        color: rgb(255, 255, 255);
       }
 
       code {
         font-weight: initial;
+        // color: rgb(255, 255, 255);
       }
 
       p {
-        color: black;
+        // color: rgb(255, 255, 255);
         padding-left: 5px;
       }
 
