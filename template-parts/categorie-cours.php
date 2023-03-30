@@ -9,7 +9,7 @@
   $aTrouver = '(';
   $postion = strpos(substr($titre, 7), $aTrouver);
   $titre_long = substr($titre, 7, $postion);
-  $duree = "90";
+  $duree = substr($titre, strpos($titre, '('));
 ?>
 
 <article class="blocflex__article">
@@ -17,7 +17,7 @@
     <h5><?= $sigle; ?></h5>
     <h6><?= $titre_long; ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-    <h6><?= $duree; ?>h</h6>
+    <h6><?= $duree; ?></h6>
     <p><?php the_field('enseignant')?></p>
     <p><?php the_field('domaine')?></p>
   </a>
