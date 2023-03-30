@@ -10,17 +10,24 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.803);
 
-
   h1 {
     color: rgb(16, 16, 16);
     font-size: 5rem;
     display: inline;
   }
 
+  h5 {
+    color: rgb(48, 48, 48);
+    font-size: 1.5rem;
+  }
+
   .menu-cours-container, .menu-note-4w4-container {
+
     .menu {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
 
     .menu-item {
@@ -31,11 +38,11 @@
         align-items: center;
         margin: 0 1rem 0 1rem;
         color: rgb(24, 24, 24);
+        font-weight: bold;
       }
 
       code {
-        font-weight: initial;
-        // color: rgb(255, 255, 255);
+        font-weight: bold;
       }
 
       p {

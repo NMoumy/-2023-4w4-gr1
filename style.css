@@ -786,9 +786,15 @@ main h2 {
   font-size: 5rem;
   display: inline;
 }
+.site__erreur h5 {
+  color: rgb(48, 48, 48);
+  font-size: 1.5rem;
+}
 .site__erreur .menu-cours-container .menu, .site__erreur .menu-note-4w4-container .menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .site__erreur .menu-cours-container .menu-item, .site__erreur .menu-note-4w4-container .menu-item {
   list-style: none;
@@ -798,9 +804,10 @@ main h2 {
   align-items: center;
   margin: 0 1rem 0 1rem;
   color: rgb(24, 24, 24);
+  font-weight: bold;
 }
 .site__erreur .menu-cours-container .menu-item code, .site__erreur .menu-note-4w4-container .menu-item code {
-  font-weight: initial;
+  font-weight: bold;
 }
 .site__erreur .menu-cours-container .menu-item p, .site__erreur .menu-note-4w4-container .menu-item p {
   color: rgb(24, 24, 24);
