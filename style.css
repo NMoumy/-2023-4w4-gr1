@@ -773,7 +773,7 @@ main h2 {
   content: "";
 }
 
-.site__erreur {
+main.site__erreur {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -781,35 +781,35 @@ main h2 {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.803);
 }
-.site__erreur h1 {
+main.site__erreur h1 {
   color: rgb(16, 16, 16);
   font-size: 5rem;
   display: inline;
 }
-.site__erreur h5 {
+main.site__erreur h5 {
   color: rgb(48, 48, 48);
   font-size: 1.5rem;
 }
-.site__erreur .menu-cours-container .menu, .site__erreur .menu-note-4w4-container .menu {
+main.site__erreur .menu-cours-container .menu, main.site__erreur .menu-note-4w4-container .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.site__erreur .menu-cours-container .menu-item, .site__erreur .menu-note-4w4-container .menu-item {
+main.site__erreur .menu-cours-container .menu-item, main.site__erreur .menu-note-4w4-container .menu-item {
   list-style: none;
 }
-.site__erreur .menu-cours-container .menu-item a, .site__erreur .menu-note-4w4-container .menu-item a {
+main.site__erreur .menu-cours-container .menu-item a, main.site__erreur .menu-note-4w4-container .menu-item a {
   flex-direction: row;
   align-items: center;
   margin: 0 1rem 0 1rem;
   color: rgb(24, 24, 24);
   font-weight: bold;
 }
-.site__erreur .menu-cours-container .menu-item code, .site__erreur .menu-note-4w4-container .menu-item code {
+main.site__erreur .menu-cours-container .menu-item code, main.site__erreur .menu-note-4w4-container .menu-item code {
   font-weight: bold;
 }
-.site__erreur .menu-cours-container .menu-item p, .site__erreur .menu-note-4w4-container .menu-item p {
+main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-note-4w4-container .menu-item p {
   color: rgb(24, 24, 24);
   padding-left: 5px;
 }
@@ -961,8 +961,8 @@ Mise en page généra;e avec display:grid
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .site__aside {
