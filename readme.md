@@ -5,8 +5,8 @@
   - https://cidweb37.sg-host.com/
 - Github **NMoumy**
   - https://github.com/NMoumy
-  
-# Lab4 (2 points)
+
+# Lab4
 ## description du lab4:
 - Ajouter quelques champs personnalisés pour la page d'accueil
 - Utilisez des types de champs qu'on a pas encore utilisé
