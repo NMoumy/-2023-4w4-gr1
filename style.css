@@ -652,6 +652,7 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 100vh;
   /***************************** les articles*/
   /***************************** la galerie*/
 }
@@ -790,13 +791,18 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px 5px 30px;
   background-color: #ccc5b9;
   border-top: 2px solid #c6beb0;
 }
+.site__footer .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 5px 30px;
+}
 @media screen and (min-width: 1000px) {
-  .site__footer {
+  .site__footer .information {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -848,6 +854,13 @@ main h2 {
 .site__footer .widget {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .site__footer .widget {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .menu-cours-container .menu {
@@ -889,6 +902,37 @@ main h2 {
   }
 }
 .menu-cours-container .menu-item a :hover {
+  color: #e19600;
+}
+
+.menu-note-4w4-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-note-4w4-container .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-4w4-container .menu-item a {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 3px;
+  }
+}
+.menu-note-4w4-container .menu-item a:hover {
   color: #e19600;
 }
 
