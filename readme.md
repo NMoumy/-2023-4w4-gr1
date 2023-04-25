@@ -6,11 +6,8 @@
 - Github **NMoumy**
   - https://github.com/NMoumy
 
-# Lab4
-## description du lab4:
-- Ajouter quelques champs personnalisés pour la page d'accueil
-- Utilisez des types de champs qu'on a pas encore utilisé
-- Débuter le carrousel
- - Afficher le conteneur du carrousel avec une animation
- - Afficher les images de la galerie dans le carrousel
-
+# Lab5
+## description du lab5:
+- Créer des sidebar de widget
+- Intégrer 3 widgets dans le footer
+- Créer un footer de deux lignes
