@@ -849,6 +849,7 @@ main h2 {
   display: flex;
   flex-direction: column;
 }
+
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
