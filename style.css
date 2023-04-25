@@ -845,6 +845,10 @@ main h2 {
   width: 40px;
   height: auto;
 }
+.site__footer .widget {
+  display: flex;
+  flex-direction: row;
+}
 
 .menu-cours-container .menu {
   display: flex;

@@ -1,5 +1,5 @@
-
 <footer class="site__footer">
+
   <div class="footer__logo">
       <?php the_custom_logo(); ?>
   </div>
@@ -19,6 +19,25 @@
       "container_class" => "social__media"
     )); ?>
   </div>
+
+  <section class="widget">
+    <div class="footer__col">
+      <div class="sidebar">
+        <?php dynamic_sidebar( 'footer_1' ); ?>
+      </div>
+    </div>
+    <div class="footer__col">
+      <div class="sidebar">
+        <?php dynamic_sidebar( 'footer_2' ); ?>
+      </div>
+    </div>
+    <div class="footer__colr">
+      <div class="sidebar">
+        <?php dynamic_sidebar( 'footer_3' ); ?>
+      </div>
+    </div>
+  </section>
+
 </footer>
   <?php wp_footer(); ?>
 </body>
