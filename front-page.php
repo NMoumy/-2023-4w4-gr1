@@ -8,10 +8,12 @@
 
         <main class="site__main">
             <h3>Bienvenue sur 4W4</h3>
+            <h2>Les évenements à venir</h2>
             <section class="blocflex">
                 <?php wp_nav_menu(array(
                 "menu" => "evenements",
-                "container" => "nav"
+                "container" => "nav",
+                "container_class" => "menu__evenements"
                 )); ?>
             </section>
             <section class="blocflex">

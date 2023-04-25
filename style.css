@@ -936,35 +936,20 @@ main h2 {
   color: #e19600;
 }
 
-.menu-note-4w4-container .menu {
+.menu__evenements {
+  background-color: transparent;
+}
+.menu__evenements .menu {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1000px) {
-  .menu-note-4w4-container .menu {
-    flex-direction: column;
-  }
-}
-.menu-note-4w4-container .menu-item a {
+.menu__evenements .menu .menu-item {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 20px;
-}
-@media screen and (min-width: 1000px) {
-  .menu-note-4w4-container .menu-item a {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    padding: 3px;
-  }
-}
-.menu-note-4w4-container .menu-item a:hover {
-  color: #e19600;
+  flex-direction: column;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(255, 94, 94);
+  height: 100px;
+  margin: 10px;
 }
 
 /* --------------------------------------------- layout */
