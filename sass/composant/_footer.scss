@@ -75,6 +75,10 @@
   }
   .widget {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    .footer__col {
+
+    }
   }
 } //  fin du pied de page

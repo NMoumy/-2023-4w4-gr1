@@ -847,9 +847,8 @@ main h2 {
 }
 .site__footer .widget {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;

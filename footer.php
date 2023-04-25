@@ -31,7 +31,7 @@
         <?php dynamic_sidebar( 'footer_2' ); ?>
       </div>
     </div>
-    <div class="footer__colr">
+    <div class="footer__col">
       <div class="sidebar">
         <?php dynamic_sidebar( 'footer_3' ); ?>
       </div>
