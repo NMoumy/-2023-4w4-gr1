@@ -658,6 +658,10 @@ hr {
 }
 .blocflex__article {
   flex: 1 0 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   margin: 20px;
   font-size: 1rem;
@@ -666,6 +670,7 @@ hr {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: all ease 1s;
   cursor: pointer;
+  /***************************** figure*/
 }
 .blocflex__article h5 {
   font-size: 1rem;
@@ -687,6 +692,14 @@ hr {
 }
 .blocflex__article p {
   color: #dddddd;
+}
+.blocflex__article .blocflex__figure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blocflex__article .blocflex__figure img {
+  display: block;
 }
 .blocflex__article:hover {
   background-color: #403d39;

@@ -7,6 +7,10 @@
   /***************************** les articles*/
   &__article{
     flex: 1 0 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
     margin: 20px;
     font-size: 1rem;
@@ -36,6 +40,19 @@
 
     p {
       color: #dddddd;
+    }
+
+    /***************************** figure*/
+    .blocflex__figure {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      img {
+        display: block;
+        // width: 150px;
+      }
+
     }
 
   }

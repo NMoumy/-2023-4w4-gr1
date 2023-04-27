@@ -34,6 +34,7 @@ add_theme_support( 'custom-logo', array(
 /* permet d'utiliser la fonction image en arrière plan dans personnaliser */
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
+// set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
