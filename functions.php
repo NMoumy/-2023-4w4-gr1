@@ -31,6 +31,9 @@ add_theme_support( 'custom-logo', array(
     'height' => 500,
     'width'  => 500,
 ) );
+/* permet d'utiliser la fonction image en arrière plan dans personnaliser */
+add_theme_support( 'custom-background' );
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

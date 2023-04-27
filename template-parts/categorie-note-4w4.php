@@ -12,6 +12,7 @@
 
 <article class="blocflex__article">
   <a href="<?php the_permalink(); ?>">
+    <?php the_post_thumbnail('thumbnail'); ?>
     <h5><?= $titre; ?></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
   </a>

@@ -12,7 +12,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site <?= is_front_page() ? "no-aside" : "" ?>">
+<body class="site custom-background <?= is_front_page() ? "no-aside" : "" ?> ">
     <header class="site__entete">
         <div class="entete__nav">
             <div class="menu__logo">
