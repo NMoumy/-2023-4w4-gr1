@@ -638,7 +638,13 @@ hr {
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
+}
+.site__main .dans__article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .site__main .dans__article h3 {
   color: #403d39;

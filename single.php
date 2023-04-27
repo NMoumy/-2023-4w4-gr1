@@ -13,8 +13,10 @@
                 while(have_posts()): the_post(); ?>
                 <!-- template-part pour single -->
                 <article class="dans__article"> 
-                    <?php the_post_thumbnail('medium_large'); ?>
-                    <h3><?php the_title(); ?></h3>
+                    <div>
+                        <?php the_post_thumbnail('thumbnail'); ?>
+                        <h3><?php the_title(); ?></h3>
+                    </div>
                     <?php the_content(); ?>
                 </article>
                 <hr>
