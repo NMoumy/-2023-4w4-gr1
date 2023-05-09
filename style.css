@@ -658,7 +658,7 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 10vh;
   /***************************** les articles*/
   /***************************** la galerie*/
 }

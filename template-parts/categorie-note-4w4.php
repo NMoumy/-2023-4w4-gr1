@@ -14,13 +14,13 @@
   <a href="<?php the_permalink(); ?>">
     <figure class="blocflex__figure">
       <?php 
-        if(has_post_thumbnail()) {
+        /*if(has_post_thumbnail()) {
           the_post_thumbnail('thumbnail'); 
           // echo $id_premiere_image;
         }
         else {
           echo get_the_post_thumbnail(27, 'thumbnail'); //image par default
-        }
+        }*/
       ?>
     </figure>
     <?php //echo get_the_ID() . " id_premiere_image = " . $id_premiere_image; ?>
