@@ -513,7 +513,7 @@ hr {
 }
 .site__entete .entete__nav .menu__nav__recherche {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   align-self: center;
@@ -587,7 +587,7 @@ hr {
   top: 0;
   height: 5px;
   background-color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   transition: 0.3s ease;
   border-radius: 2px;
 }
@@ -604,6 +604,14 @@ hr {
 }
 .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+@media screen and (min-width: 1000px) {
+  .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger:checked ~ .menu__entete {
+    position: static;
+  }
 }
 .site__entete .entete__acc {
   margin-bottom: 35vh;
