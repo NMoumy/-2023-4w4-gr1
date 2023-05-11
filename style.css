@@ -566,7 +566,7 @@ hr {
   transition: color 1s ease;
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete .menu .menu-item a:hover {
-  color: #e19600;
+  color: #0d1b2a;
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete div .barre__recherche {
   align-self: flex-end;
@@ -605,7 +605,7 @@ hr {
 .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
   position: absolute;
-  top: 120px;
+  top: 115px;
   right: 0;
   text-align: right;
 }
@@ -685,7 +685,6 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 10vh;
   /***************************** les articles*/
   /***************************** la galerie*/
 }
@@ -1015,7 +1014,13 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
 }
 .menu__evenements .menu {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 1080px) {
+  .menu__evenements .menu {
+    flex-direction: row;
+  }
 }
 .menu__evenements .menu .menu-item {
   display: flex;
@@ -1043,12 +1048,15 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   display: block;
   width: 150px;
   height: 150px;
-}
-
-/* --------------------------------------------- layout */
+} /* --------------------------------------------- layout */
 /**
 Mise en page généra;e avec display:grid
 */
+.site {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .site__entete {
   grid-area: header;
 }

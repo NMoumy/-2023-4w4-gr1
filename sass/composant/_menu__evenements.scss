@@ -3,8 +3,13 @@
 
   .menu { // ul
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     // gap: 10px;
+
+    @media screen and (min-width:$largeur__bureau) {
+      flex-direction: row;
+    }
 
     .menu-item { // li
       display: flex;
