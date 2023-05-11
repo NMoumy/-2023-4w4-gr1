@@ -651,11 +651,32 @@ hr {
 }
 
 .site__main h3 {
-  color: #252422;
+  color: #ffffff;
   width: 100%;
   padding: 10px 0 10px 0;
   display: inline;
   text-align: center;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 700px) {
+  .site__main h3 {
+    font-size: 4rem;
+  }
+}
+
+.site__main h2 {
+  color: #0d1b2a;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: inline;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .site__main h2 {
+    font-size: 2rem;
+  }
 }
 
 .site__main .dans__article {
@@ -1009,9 +1030,6 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   color: #e19600;
 }
 
-.menu__evenements {
-  background-color: transparent;
-}
 .menu__evenements .menu {
   display: flex;
   flex-direction: column;
@@ -1026,8 +1044,8 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border: 2px solid rgb(201, 201, 201);
-  background-color: rgb(239, 239, 239);
+  border: 2px solid #33415C;
+  background-color: #ffffff;
   min-height: 100px;
   margin: 10px;
 }
@@ -1037,18 +1055,24 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  color: #001233;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu__evenements .menu .menu-item a .title {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .menu__evenements .menu .menu-item a .description {
   font-size: 0.8rem;
+  padding-bottom: 5px;
 }
 .menu__evenements .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;
-} /* --------------------------------------------- layout */
+}
+
+/* --------------------------------------------- layout */
 /**
 Mise en page généra;e avec display:grid
 */
@@ -1063,7 +1087,7 @@ Mise en page généra;e avec display:grid
 
 .site__main {
   grid-area: main;
-  background-color: #ffffff;
+  background-color: #415a77;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1073,7 +1097,7 @@ Mise en page généra;e avec display:grid
 
 .site__aside {
   grid-area: aside;
-  background-color: #252422;
+  background-color: #1b263b;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   display: flex;
   flex-direction: column;
