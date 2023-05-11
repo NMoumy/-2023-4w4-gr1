@@ -1,11 +1,19 @@
-.site__entete{ // entete du site
+.grande__taille { 
+  height: 100vh;
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  flex-direction: column;
+}
 
+
+.site__entete{ // entete du site
   /* ///////////////////////////////////// entete barre de navigation */
   .entete__nav { // barre de navigation
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #fffcf2;
+    align-items: center;
 
     @media screen and (min-width : $largeur__bureau) {
       flex-direction: row;
@@ -33,9 +41,6 @@
       align-items: center;
       justify-content: center;
       align-self: center;
-      background-color: #ccc5b9;
-      border-left: 3px solid #a39a8a;
-
 
       @media screen and (min-width : $largeur__bureau) {
           flex-direction: row;
@@ -43,7 +48,6 @@
           justify-content: flex-end;
           padding-top: 10px;
           border-left: none;
-          background-color: #fffcf2;
       }
 
       /* ////////////////////////////// menu entete */
@@ -54,6 +58,7 @@
         }
 
         .menu { // ul
+          background:transparent;
           display: flex;
           list-style-type: none;
           flex-direction: column;
@@ -75,7 +80,7 @@
             a {
               padding : 3px 5px;
               text-decoration: none;
-              color: #252422;
+              color: #ffffff;
               font-size: 1.2rem;
               font-weight: bold;
               transition: color 1s ease;
@@ -113,7 +118,7 @@
         position: relative;
         top: 0;
         height: 5px;
-        background-color: #252422;
+        background-color: #ffffff;
         margin-bottom: 6px;
         transition: 0.3s ease;
         border-radius: 2px;
@@ -140,33 +145,47 @@
 
   } // FIN barre de navigation
 
+  .entete__acc{ // si on n'est dans accueil
+    margin-bottom: 35vh;
+  }
+
   /* ///////////////////////////////////// titre entete */
+  .titres{
+    display: flex;
+    flex-direction: column;
 
-  .site__titre { // titre principale
-    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-    margin: 0;
+    .site__titre { // titre principale
+      font-size: 2.5rem;
+      margin: 0;
 
-    a {
-      text-decoration: none;
-      color: #ffffff;
+      @media screen and (min-width:$largeur__bureau) {
+        font-size: 4rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0 15px 0;
+      }
+
+    }
+
+    .site__sous__titre { // titre slogan
       display: flex;
       justify-content: center;
-      background-color: #252422;
-      padding: 15px 0 15px 0;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 10px;
+      color: #ffffff;
+      // background-color: #ccc5b9;
     }
 
   }
-
-  .site__sous__titre { // titre slogan
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-bottom: 20px;
-    color: #403d39;
-    background-color: #ccc5b9;
+  .pas__titre { // si il on n'est pas dans la page d'accueil il y a pas de titre
+    display: none;
   }
 
 } // FIN site entete
-
-

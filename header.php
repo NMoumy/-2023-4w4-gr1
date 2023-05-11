@@ -12,9 +12,9 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site custom-background <?= is_front_page() ? "no-aside" : "" ?> ">
-    <header class="site__entete">
-        <div class="entete__nav">
+<body class="site custom-background <?= is_front_page() || is_404() ? "no-aside" : ""  ?> ">
+    <header class="site__entete <?= is_front_page() ? "grande__taille" : "" ?>">
+        <div class="entete__nav <?= is_front_page() ? "entete__acc" : "" ?>">
             <div class="menu__logo">
                 <?php the_custom_logo(); ?>
             </div>
@@ -36,13 +36,14 @@
 
             </div>
         </div>
-        <h1 class="site__titre"><a href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
-        <h2 class="site__sous__titre"><?= bloginfo('description'); ?></h2>
-
+        <div class="titres <?= is_front_page() ? "" : "pas__titre" ?>">
+            <h1 class="site__titre"><a href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></h1></a>
+            <h2 class="site__sous__titre"><?= bloginfo('description'); ?></h2>
+        </div>
     </header>
     
     <?php 
-        if(! is_front_page()) {
+        if(! is_front_page() && ! is_404()) {
             get_template_part("template-parts/aside"); 
         }
     ?>
