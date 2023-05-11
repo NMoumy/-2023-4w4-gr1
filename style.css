@@ -390,7 +390,7 @@ ul, ol {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   ul, ol {
     margin: 1rem 0.5rem;
     padding: 13px;
@@ -407,7 +407,7 @@ ol > li {
 h2 {
   font-size: 1.2rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   h2 {
     font-size: 2rem;
   }
@@ -416,7 +416,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   h3 {
     font-size: 2.1rem;
   }
@@ -456,7 +456,7 @@ pre {
   width: 25rem;
   padding: 10px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   pre {
     width: 60rem;
   }
@@ -493,7 +493,7 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav {
     flex-direction: row;
   }
@@ -506,7 +506,7 @@ hr {
   height: auto;
   padding-top: 10px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__logo .custom-logo-link img {
     padding-left: 20px;
   }
@@ -520,7 +520,7 @@ hr {
   /* ////////////////////////////// menu entete */
   /* ////////////////////////////// bouton burger */
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav__recherche {
     flex-direction: row;
     align-items: center;
@@ -532,7 +532,7 @@ hr {
 .site__entete .entete__nav .menu__nav__recherche .menu__entete {
   display: none;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav__recherche .menu__entete {
     display: flex;
   }
@@ -543,12 +543,12 @@ hr {
   list-style-type: none;
   flex-direction: column;
   padding-right: 20px;
-  gap: 1.2rem;
+  gap: 5px;
   padding: 10px;
   top: 3rem;
   right: 0;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav__recherche .menu__entete .menu {
     position: static;
     top: auto;
@@ -561,7 +561,7 @@ hr {
   padding: 3px 5px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   transition: color 1s ease;
 }
@@ -577,7 +577,7 @@ hr {
 .site__entete .entete__nav .menu__nav__recherche .bouton__burger__conteneur {
   padding: 20px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav__recherche .bouton__burger__conteneur {
     display: none;
   }
@@ -605,10 +605,11 @@ hr {
 .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 0;
+  text-align: right;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav__recherche #cc__bouton__burger:checked ~ .menu__entete {
     position: static;
   }
@@ -624,7 +625,7 @@ hr {
   font-size: 2.5rem;
   margin: 0;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__entete .titres .site__titre {
     font-size: 4rem;
   }
@@ -708,7 +709,7 @@ hr {
   font-size: 1rem;
   color: #fffcf2;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .blocflex__article h5 {
     font-size: 1.2rem;
   }
@@ -717,7 +718,7 @@ hr {
   font-size: 1.1rem;
   color: #fffcf2;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .blocflex__article h6 {
     font-size: 1.3rem;
   }
@@ -791,7 +792,7 @@ main h2 {
   color: #000000;
   padding: 0.5rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .recherche .barre__recherche .recherche__input {
     width: 200px;
   }
@@ -874,7 +875,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   justify-content: space-between;
   padding: 10px 30px 5px 30px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__footer .information {
     flex-direction: row;
     align-items: flex-start;
@@ -899,7 +900,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   align-items: flex-start;
   flex-direction: column;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__footer .menu__footer li {
     flex-direction: row;
   }
@@ -929,7 +930,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site__footer .widget {
     flex-direction: row;
     align-items: flex-start;
@@ -941,7 +942,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .menu-cours-container .menu {
     flex-direction: column;
   }
@@ -954,7 +955,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   flex-wrap: nowrap;
   padding: 20px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .menu-cours-container .menu-item a {
     flex-direction: column;
     align-items: flex-start;
@@ -969,7 +970,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   display: none;
   color: #fffcf2;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .menu-cours-container .menu-item a p {
     display: block;
   }
@@ -984,7 +985,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .menu-note-4w4-container .menu {
     flex-direction: column;
   }
@@ -997,7 +998,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   flex-wrap: nowrap;
   padding: 20px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .menu-note-4w4-container .menu-item a {
     flex-direction: column;
     align-items: flex-start;
@@ -1107,7 +1108,7 @@ Mise en page généra;e avec display:grid
   grid-template-areas: "header" "aside" "main" "footer";
   overflow-x: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .site {
     grid-template-columns: auto 20%;
     grid-template-areas: "header header" "main aside" "footer footer";
@@ -1117,7 +1118,7 @@ Mise en page généra;e avec display:grid
 .no-aside {
   grid-template-areas: "header" "main" "footer";
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .no-aside {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
