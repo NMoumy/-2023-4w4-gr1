@@ -13,17 +13,7 @@
 <article class="blocflex__article">
   <a href="<?php the_permalink(); ?>">
     <figure class="blocflex__figure">
-      <?php 
-        /*if(has_post_thumbnail()) {
-          the_post_thumbnail('thumbnail'); 
-          // echo $id_premiere_image;
-        }
-        else {
-          echo get_the_post_thumbnail(27, 'thumbnail'); //image par default
-        }*/
-      ?>
     </figure>
-    <?php //echo get_the_ID() . " id_premiere_image = " . $id_premiere_image; ?>
     <h5><?= $titre; ?></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
   </a>

@@ -8,15 +8,15 @@
   /***************************** les articles*/
   &__article{
     flex: 1 0 250px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     padding: 10px;
     margin: 20px;
     font-size: 1rem;
     background-color: #252422;
-    border-radius: 10px;
+    // border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: all ease 1s;
     cursor: pointer;
@@ -67,11 +67,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
   }
 
 }
+
 .bloc__evt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(to bottom, #023E7D, #002855);
+  width: 100%;
+}
+
+.bloc__galerie {
+  background-image: linear-gradient(to bottom, #002855, #001845);
+}
+
+.bloc__note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #001845, #001233);
+
+  div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:$largeur__bureau) {
+      flex-direction: row;
+    }
+
+  }
+
 }

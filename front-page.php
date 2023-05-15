@@ -16,18 +16,38 @@
                 "container_class" => "menu__evenements"
                 )); ?>
             </section>
-            <section class="blocflex">
-            <h2>Les notes de cours</h2>                
-                <?php if(have_posts()):
-                    while (have_posts()): the_post(); 
-                        $la_categorie = 'note-4w4';
-                        if (in_category('galerie')) {
-                            $la_categorie = 'galerie';
-                        }
-                        get_template_part("template-parts/categorie",$la_categorie);
-                    endwhile; 
-                endif; ?>
+
+            <section class="blocflex bloc__galerie">
+                <h2>La galerie</h2>
+                <?php
+                    $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'galerie'
+                    );
+                    $query = new WP_Query($args);
+                    if($query->have_posts()):
+                        while ($query->have_posts()): $query->the_post(); 
+                            get_template_part("template-parts/categorie", "galerie");
+                        endwhile; 
+                    endif;
+                    wp_reset_postdata();
+                ?>
             </section>
+
+            <section class="blocflex bloc__note"> 
+                <h2>Les notes de cours</h2> 
+                <div>
+                    <?php if(have_posts()):
+                        while (have_posts()): the_post(); 
+                            if (!in_category('galerie')) {
+                                $la_categorie = 'note-4w4';
+                                get_template_part("template-parts/categorie", $la_categorie);
+                            }
+                        endwhile; 
+                    endif; ?>
+                </div>
+            </section>
+
         </main>
 
     <?php get_footer(); ?>   
