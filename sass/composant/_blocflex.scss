@@ -64,6 +64,14 @@
   /***************************** la galerie*/
   &__galerie {
     flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+}
+.bloc__evt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

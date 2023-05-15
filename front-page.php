@@ -8,8 +8,8 @@
 
         <main class="site__main">
             <h3>Bienvenue sur 4W4</h3>
-            <h2>Les évenements à venir</h2>
-            <section class="blocflex">
+            <section class="blocflex bloc__evt">
+                <h2>Les événements à venir</h2>
                 <?php wp_nav_menu(array(
                 "menu" => "evenements",
                 "container" => "nav",
@@ -17,6 +17,7 @@
                 )); ?>
             </section>
             <section class="blocflex">
+            <h2>des notes de cours</h2>                
                 <?php if(have_posts()):
                     while (have_posts()): the_post(); 
                         $la_categorie = 'note-4w4';
