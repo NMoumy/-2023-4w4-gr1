@@ -17,7 +17,7 @@
                 )); ?>
             </section>
             <section class="blocflex">
-            <h2>des notes de cours</h2>                
+            <h2>Les notes de cours</h2>                
                 <?php if(have_posts()):
                     while (have_posts()): the_post(); 
                         $la_categorie = 'note-4w4';
