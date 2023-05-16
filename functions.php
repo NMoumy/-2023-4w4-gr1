@@ -89,7 +89,7 @@ add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
  * Ajouter la description et l'image mise en avant à chacun des choix du menu « evenement »
  */
 function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
-    if ( 'evenements' == $args->menu) 
+    if ( 'evenements' == $args->menu || 'archives' == $args->menu ) 
     {
         $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
         if ( $post_thumbnail_id ) {
@@ -101,6 +101,7 @@ function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args 
     }
     return $item_output;
 }
+
 add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10, 4 );
 
 /* ------------------------------------------ enregistrement des widgets */

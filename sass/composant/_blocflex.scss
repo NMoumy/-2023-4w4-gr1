@@ -67,7 +67,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
   }
 
 }
@@ -76,19 +75,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, #023E7D, #002855);
   width: 100%;
+  background-image: linear-gradient(to bottom, #025959, #012E40);
+
+  h2{
+    color: #ffffff;
+  }
+}
+
+.bloc__archive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h2{
+    color: #025959;
+  }
 }
 
 .bloc__galerie {
-  background-image: linear-gradient(to bottom, #002855, #001845);
+  background-image: linear-gradient(to bottom, #012E40, #025959);
+  padding: 0 10px 0 10px;
+
+  p{
+    color: #ffffff;
+  }
+
 }
 
 .bloc__note {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, #001845, #001233);
+  background-color: white;
+
+  h2{
+    color: #025959;
+  }
 
   div{
     display: flex;
