@@ -30,6 +30,7 @@
                                     "container" => "nav",
                                     "container_class" => "menu__entete", //pour changer le nom de la class
                 )); ?>
+                <div class="bloc__couleur"></div>
                 <div class="barre__recherche">
                     <?= get_search_form(); ?>
                 </div>

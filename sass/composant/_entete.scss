@@ -14,7 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom, #025959ed, #012e40ed);
+    background-image: linear-gradient(to bottom, #02595989, #012e40);
 
     @media screen and (min-width : $largeur__bureau) {
       flex-direction: row;
@@ -54,8 +54,11 @@
       /* ////////////////////////////// menu entete */
       .menu__entete { // nav
         display: none;
+        opacity: 0;
+
         @media screen and (min-width : $largeur__bureau) {
           display: flex;
+          opacity: 1;
         }
 
         .menu { // ul
@@ -141,16 +144,36 @@
       // menu burger checker
       #cc__bouton__burger:checked ~ .menu__entete {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 115px;
-        right: 0;
-        text-align: right;
+        right: 37%;
+        text-align: center;
+        z-index: 12;
+        opacity: 1;
+        transition: opacity 5s;
 
         @media screen and (min-width:$largeur__bureau) {
           position: static;
         }
       }
+      #cc__bouton__burger:checked ~ .bloc__couleur {
+        @media screen and (max-width:$largeur__bureau) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden; 
+          background-color: rgb(0, 0, 0); 
+          z-index: 11; 
+        }
+      }
+      #cc__bouton__burger:checked ~ .bouton__burger__conteneur {
+        z-index: 12;
+        position: fixed;
+        right: 0;
 
+      }
     } // FIN nav avec bouton burger
 
   } // FIN barre de navigation

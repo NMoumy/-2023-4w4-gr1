@@ -45,7 +45,7 @@
             </section>
 
             <section class="blocflex bloc__note"> 
-                <h2>Les articles du jours</h2> 
+                <h2>les nouveaux articles</h2> 
                 <div>
                     <?php if(have_posts()):
                         while (have_posts()): the_post(); 
