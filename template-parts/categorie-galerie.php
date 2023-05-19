@@ -6,6 +6,7 @@
   */
 ?>
 <article class="blocflex__galerie">
+    <h4><?php the_field('collection') ?></h4>
     <?php the_content(); ?>
     <p>Photographe : <?php the_field('photographe') ?></p>
     <p>La source des images : <?php the_field('source') ?></p>

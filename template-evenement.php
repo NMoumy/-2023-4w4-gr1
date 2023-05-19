@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-  <main class="site__main">
+  <main class="site__main page__evt">
     <?php
     if ( have_posts() ) : the_post(); ?>
       <h1><?= get_the_title(); ?></h1>

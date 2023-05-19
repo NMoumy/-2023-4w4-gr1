@@ -492,6 +492,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(to bottom, rgba(2, 89, 89, 0.9294117647), rgba(1, 46, 64, 0.9294117647));
 }
 @media screen and (min-width: 1080px) {
   .site__entete .entete__nav {
@@ -566,7 +567,7 @@ hr {
   transition: color 1s ease;
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete .menu .menu-item a:hover {
-  color: #0d1b2a;
+  color: #038C65;
 }
 .site__entete .entete__nav .menu__nav__recherche .menu__entete div .barre__recherche {
   align-self: flex-end;
@@ -616,6 +617,8 @@ hr {
 }
 .site__entete .entete__acc {
   margin-bottom: 35vh;
+  background-color: transparent;
+  background-image: none;
 }
 .site__entete .titres {
   display: flex;
@@ -681,13 +684,14 @@ hr {
 
 .site__main .dans__article {
   background-color: #fffcf2;
-  border: 1px solid #ccc5b9;
-  padding: 1rem;
-  margin-bottom: 5px;
+  border-top: 1px solid rgba(204, 197, 185, 0.8431372549);
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 .site__main .dans__article div {
   display: flex;
@@ -695,17 +699,34 @@ hr {
   justify-content: center;
 }
 .site__main .dans__article h3 {
-  color: #403d39;
+  color: #012E40;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 1080px) {
+  .site__main .dans__article h3 {
+    font-size: 2rem;
+  }
 }
 .site__main .dans__article h2 {
-  background-color: #403d39;
+  background-color: #025959;
   color: #fffcf2;
+}
+.site__main .dans__article h4 {
+  text-align: center;
+}
+.site__main .dans__article ul {
+  padding-left: 2rem;
+}
+.site__main .dans__article p {
+  padding-left: 10px;
+  text-align: center;
 }
 
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #fffcf2;
   /***************************** les articles*/
   /***************************** la galerie*/
 }
@@ -718,7 +739,7 @@ hr {
   padding: 10px;
   margin: 20px;
   font-size: 1rem;
-  background-color: #252422;
+  background-color: #012E40;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: all ease 1s;
   cursor: pointer;
@@ -754,13 +775,18 @@ hr {
   display: block;
 }
 .blocflex__article:hover {
-  background-color: #403d39;
+  background-color: #038C65;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .blocflex__galerie {
   flex: 1 0 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.blocflex__galerie h4 {
+  color: #00ac9d;
+  font-size: 1.9rem;
 }
 
 .bloc__evt {
@@ -779,6 +805,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: #fffcf2;
 }
 .bloc__archive h2 {
   color: #025959;
@@ -796,7 +823,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #fffcf2;
 }
 .bloc__note h2 {
   color: #025959;
@@ -818,21 +845,23 @@ main h2 {
   display: flex;
   justify-content: center;
   padding: 1.2rem;
-  background-color: #656839;
 }
 
 .recherche__section {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fffcf2;
 }
 .recherche__section article {
   flex: 1 0 250px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
   padding: 10px;
   margin: 20px;
   font-size: 1rem;
-  background-color: #252422;
-  border-radius: 10px;
+  background-color: #012E40;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: all ease 1s;
   cursor: pointer;
@@ -844,7 +873,8 @@ main h2 {
   color: #fffcf2;
 }
 .recherche__section article:hover {
-  background-color: #403d39;
+  background-color: #011526;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .recherche {
@@ -936,7 +966,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, #025959, #012E40);
+  background-image: linear-gradient(to bottom, rgba(2, 89, 89, 0.537254902), #012e40);
 }
 .site__footer .information {
   display: flex;
@@ -982,7 +1012,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   transition: all 0.5s ease;
 }
 .site__footer .menu__footer li a:hover {
-  color: #ea6d00;
+  color: #038C65;
 }
 .site__footer .social__media .menu {
   list-style: none;
@@ -1046,7 +1076,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   }
 }
 .menu-cours-container .menu-item a :hover {
-  color: #e19600;
+  color: #038C65;
 }
 
 .menu-note-4w4-container .menu {
@@ -1077,7 +1107,7 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   }
 }
 .menu-note-4w4-container .menu-item a:hover {
-  color: #e19600;
+  color: #038C65;
 }
 
 .menu__evenements .menu {
@@ -1138,6 +1168,11 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   z-index: 1;
 }
 
+.page__evt {
+  padding: 10px;
+  text-align: center;
+}
+
 .menu__archives .menu {
   display: flex;
   flex-direction: column;
@@ -1157,10 +1192,6 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   width: 350px;
   margin: 10px;
   position: relative;
-  background-color: rgb(0, 94, 83);
-  background-image: url("https://images.pexels.com/photos/6214937/pexels-photo-6214937.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .menu__archives .menu .menu-item a {
   display: flex;
@@ -1187,6 +1218,28 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   z-index: 2;
 }
 
+.img__archive {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.archive__cours .img__archive {
+  background-image: url("https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-color: rgb(0, 43, 38);
+}
+
+.archive__notes .img__archive {
+  background-image: url("https://images.pexels.com/photos/6214937/pexels-photo-6214937.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-color: rgb(0, 94, 83);
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page généra;e avec display:grid
@@ -1210,7 +1263,7 @@ Mise en page généra;e avec display:grid
 
 .site__aside {
   grid-area: aside;
-  background-color: #1b263b;
+  background-color: #011526;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   display: flex;
   flex-direction: column;
@@ -1219,7 +1272,7 @@ Mise en page généra;e avec display:grid
   flex-wrap: wrap;
 }
 .site__aside h3 {
-  color: #fffcf2;
+  color: #ffffff;
   display: inline;
   text-align: center;
   font-size: 1.3rem;
@@ -1240,7 +1293,7 @@ Mise en page généra;e avec display:grid
 }
 .site__aside li a {
   padding-bottom: 2rem;
-  color: #fffcf2;
+  color: #fff2f2;
 }
 
 .site__footer {

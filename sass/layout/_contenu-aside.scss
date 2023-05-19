@@ -23,7 +23,7 @@ Mise en page généra;e avec display:grid
 
 .site__aside {
   grid-area: aside;
-  background-color: #1b263b;
+  background-color: #011526;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ Mise en page généra;e avec display:grid
   justify-content: flex-start;
   flex-wrap: wrap;
   h3 {
-    color: #fffcf2;
+    color: #ffffff;
     display: inline;
     text-align: center;
     font-size: 1.3rem;
@@ -48,7 +48,7 @@ Mise en page généra;e avec display:grid
 
     a{
       padding-bottom: 2rem;
-      color: #fffcf2;
+      color: #fff2f2;
     }
 
   }

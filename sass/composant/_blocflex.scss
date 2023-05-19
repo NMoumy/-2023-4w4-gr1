@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #fffcf2;
   // min-height: 100vh; //ENLEVER LE COMMENTARIRE
   //min-height: 10vh; //METTRE EN COMMENTARIRE
 
@@ -15,7 +16,7 @@
     padding: 10px;
     margin: 20px;
     font-size: 1rem;
-    background-color: #252422;
+    background-color: #012E40;
     // border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: all ease 1s;
@@ -58,7 +59,8 @@
   }
   
   &__article:hover {
-    background-color: #403d39;
+    background-color: #038C65;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   /***************************** la galerie*/
@@ -67,6 +69,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h4 {
+      color: #00ac9d;
+      font-size: 1.9rem;
+    }
   }
 
 }
@@ -88,6 +95,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: #fffcf2;
 
   h2{
     color: #025959;
@@ -108,7 +116,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #fffcf2;
 
   h2{
     color: #025959;

@@ -48,7 +48,7 @@ function cidweb_modifie_requete_principal( $query ) {
             && $query->is_main_query()  // si requête principale
             && ! is_admin() ) { // si pas dans le tableau de bord
       // $query->set permet de modifier la requête principale
-      $query->set( 'category_name', 'note-4w4' ); // filtre les articles de categorie «4w4» slug
+      $query->set( 'category_name', 'accueil' ); // filtre les articles de categorie «4w4» slug
       $query->set( 'orderby', 'title' ); // trier selon le champ titre
       $query->set( 'order', 'ASC' ); // trier en ordre ascendant
       }
@@ -96,7 +96,7 @@ function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args 
             $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'large' );
             $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><img src="' . esc_url( $post_thumbnail_url[0] ) . '" class="menu-thumbnail" />', $item_output );
         } else {
-            $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span>', $item_output );
+            $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><figure class = "img__archive"></figure>', $item_output );
         }
     }
     return $item_output;
