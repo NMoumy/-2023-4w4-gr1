@@ -948,7 +948,7 @@ main.site__erreur {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(55, 100, 251, 0.803);
+  background-color: #fffefc;
 }
 main.site__erreur h1 {
   color: rgb(16, 16, 16);
