@@ -1391,6 +1391,15 @@ Mise en page généra;e avec display:grid
     font-size: 2rem;
   }
 }
+.site__aside .titre_secondaire {
+  display: none;
+}
+.site__aside .titre__atelier {
+  display: inline;
+}
+.site__aside .non__titre__atelier {
+  display: none;
+}
 .site__aside li {
   list-style: none;
   display: flex;

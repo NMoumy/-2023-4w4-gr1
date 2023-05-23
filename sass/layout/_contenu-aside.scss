@@ -30,6 +30,7 @@ Mise en page généra;e avec display:grid
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+
   h3 {
     color: #ffffff;
     display: inline;
@@ -42,6 +43,17 @@ Mise en page généra;e avec display:grid
       font-size: 2rem;
     }
   }
+
+  .titre_secondaire {
+    display: none;
+  }
+  .titre__atelier {
+    display: inline;
+  }
+  .non__titre__atelier {
+    display: none;
+  }
+
   li {
     list-style: none;
     display: flex;

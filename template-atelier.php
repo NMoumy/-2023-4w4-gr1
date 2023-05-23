@@ -9,7 +9,6 @@
     <?php
     if ( have_posts() ) : the_post(); ?>
       <h1><?= get_the_title(); ?></h1>
-      <?php the_post_thumbnail('medium') ?>
       <?php the_content();?>
       <p>Formateur: <?php the_field('formateur'); ?></p>
       <p>Date: <?php the_field('date'); ?></p>     
