@@ -1344,6 +1344,25 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   opacity: 1;
 }
 
+.page__atl h5 {
+  background-color: #025959;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.page__atl p {
+  display: inline;
+  text-align: left;
+}
+.page__atl table, .page__atl tr, .page__atl td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.page__atl table {
+  width: 25%;
+  height: 25%;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page généra;e avec display:grid

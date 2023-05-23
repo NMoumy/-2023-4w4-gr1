@@ -10,7 +10,7 @@
             <h3>Bienvenue sur 4W4</h3>
 
             <section class="blocflex bloc__atelier">
-                <h2>Les ateliers</h2>
+                <h2>Les ateliers 2023</h2>
                 <?php wp_nav_menu(array(
                 "menu" => "ateliers",
                 "container" => "nav",

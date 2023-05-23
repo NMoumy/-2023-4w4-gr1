@@ -5,18 +5,35 @@
 ?>
 
 <?php get_header(); ?>
-  <main class="site__main page__evt">
+  <main class="site__main page__atl">
     <?php
     if ( have_posts() ) : the_post(); ?>
+      <h5>les ateliers du tim</h5>
       <h1><?= get_the_title(); ?></h1>
       <?php the_content();?>
-      <p>Formateur: <?php the_field('formateur'); ?></p>
-      <p>Date: <?php the_field('date'); ?></p>     
-      <p>Heure: <?php the_field('heure'); ?></p>
-      <p>durée: <?php the_field('duree'); ?></p>     
-      <p>Local: <?php the_field('local'); ?></p>
+      <table>
+        <tr>
+          <td>Formateur</td>
+          <td><?php the_field('formateur'); ?></td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td><?php the_field('date'); ?></td>
+        </tr>
+        <tr>
+          <td>Heure</td>
+          <td><?php the_field('heure'); ?></td>
+        </tr>
+        <tr>
+          <td>Durée</td>
+          <td><?php the_field('duree'); ?></td>
+        </tr>
+        <tr>
+          <td>Local</td>
+          <td><?php the_field('local'); ?></td>
+        </tr>
+      </table>
     <?php endif;?>
   </main><!-- #main -->
 <?php
 get_footer();
-

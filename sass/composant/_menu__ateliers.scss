@@ -86,7 +86,24 @@
 
 }
 
-// .page__evt {
-//   padding: 10px;
-//   text-align: center;
-// }
+.page__atl {
+  // text-align: right;
+  h5{
+    background-color: #025959;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+  p{
+    display: inline;
+    text-align: left;
+  }
+  table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  table {
+    width: 25%;
+    height: 25%;
+  }
+}
