@@ -6,23 +6,9 @@
 - Github **NMoumy**
   - https://github.com/NMoumy
 
-# Tp2
-## description du tp2:
-- Continuer à faire progresser votre thème
-- Dynamiser la structure de menu mobile actuel
-- Créer quelques modèles et templates
-- Utiliser les images « mise-en-avant » et la fonction « the_posts_thumbnail() »
-- Améliorer le theme en general
+# Epreuve finale 
+## description de l'epreuve finale :
+- Copier la maquette du prof
+- réaliser 5 pages décrivant chacune un atelier et les faire apparaitre sur front-page.php
 
-## Les éléments que vous avez améliorés
-- Amélioration la page d'accueil interactive
-- Dynamiser la structure de menu mobile actuel
-- Amélioration votre structure de sidebar
-- Amélioration l'apparence du footer
-- Amélioration le modèle category-cours
-- Amélioration l'extension carrousel
-- Personnalisation de l'affichage d'un cours et de l'affichage d'une note de cours
-- Amélioration du design et du fonctionnement de l'entête du site
-- Une page d'accueil contenant des blocs annonçant les événements
-- Personnalisation et amélioration des archives 
 
