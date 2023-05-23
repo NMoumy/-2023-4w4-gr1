@@ -9,6 +9,15 @@
         <main class="site__main">
             <h3>Bienvenue sur 4W4</h3>
 
+            <section class="blocflex bloc__atelier">
+                <h2>Les ateliers</h2>
+                <?php wp_nav_menu(array(
+                "menu" => "ateliers",
+                "container" => "nav",
+                "container_class" => "menu__ateliers"
+                )); ?>
+            </section>
+
             <section class="blocflex bloc__evt">
                 <h2>Les événements à venir</h2>
                 <?php wp_nav_menu(array(
@@ -24,15 +33,6 @@
                 "menu" => "archives",
                 "container" => "nav",
                 "container_class" => "menu__archives"
-                )); ?>
-            </section>
-
-            <section class="blocflex bloc__atelier">
-                <h2>Les ateliers</h2>
-                <?php wp_nav_menu(array(
-                "menu" => "ateliers",
-                "container" => "nav",
-                "container_class" => "menu__ateliers"
                 )); ?>
             </section>
 

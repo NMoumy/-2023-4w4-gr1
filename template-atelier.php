@@ -11,8 +11,11 @@
       <h1><?= get_the_title(); ?></h1>
       <?php the_post_thumbnail('medium') ?>
       <?php the_content();?>
-      <p>L'adresse de l'evénement: <?php the_field('adresse'); ?></p>
-      <p>La date et l'heure de l'événement: <?php the_field('date_et_heure_de_levenement'); ?></p>     
+      <p>Formateur: <?php the_field('formateur'); ?></p>
+      <p>Date: <?php the_field('date'); ?></p>     
+      <p>Heure: <?php the_field('heure'); ?></p>
+      <p>durée: <?php the_field('duree'); ?></p>     
+      <p>Local: <?php the_field('local'); ?></p>
     <?php endif;?>
   </main><!-- #main -->
 <?php

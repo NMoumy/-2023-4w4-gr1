@@ -78,6 +78,18 @@
 
 }
 
+.bloc__atelier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fffcf2;
+
+  h2{
+    color: #025959;
+  }
+}
+
 .bloc__evt {
   display: flex;
   flex-direction: column;
