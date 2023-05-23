@@ -1344,19 +1344,32 @@ main.site__erreur .menu-cours-container .menu-item p, main.site__erreur .menu-no
   opacity: 1;
 }
 
+.page__atl {
+  display: flex;
+}
 .page__atl h5 {
   background-color: #025959;
   color: #ffffff;
   width: 100%;
   text-align: center;
+  font-size: 1rem;
 }
 .page__atl p {
   display: inline;
   text-align: left;
+  padding-left: 5px;
 }
 .page__atl table, .page__atl tr, .page__atl td {
   border: 1px solid;
   border-collapse: collapse;
+}
+.page__atl td:first-child {
+  color: #025959;
+  background-color: #ffffff;
+}
+.page__atl td:nth-child(2) {
+  color: #ffffff;
+  background-color: #025959;
 }
 .page__atl table {
   width: 25%;
