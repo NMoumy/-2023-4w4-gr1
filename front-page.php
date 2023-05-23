@@ -27,6 +27,15 @@
                 )); ?>
             </section>
 
+            <section class="blocflex bloc__atelier">
+                <h2>Les ateliers</h2>
+                <?php wp_nav_menu(array(
+                "menu" => "ateliers",
+                "container" => "nav",
+                "container_class" => "menu__ateliers"
+                )); ?>
+            </section>
+
             <section class="blocflex bloc__galerie">
                 <h2>Les galeries</h2>
                 <?php
@@ -65,3 +74,4 @@
         </main>
 
     <?php get_footer(); ?>   
+    
