@@ -1,6 +1,9 @@
 <?php 
 /**
-* index.php est le modèle par défaut du thème 4w4
+* Le fichier modèle index.php est un modèle de secours. Il est utilisé en dernier
+* recours lorsqu'aucun autre modèle plus approprié n'est disponible. Par exemple,
+* si vous n'avez pas de front-page.php ni de home.php alors index.php sera utilisé.
+* Cela est également vrai pour les fichiers archive.php ou single.php manquants, etc.
 */ 
 ?>
 
@@ -8,7 +11,7 @@
 
         <main>
             <pre>index.php</pre>
-            <h1>Bienvenue sur 4w4</h1>
+            <h1>Tim Maisonneuve</h1>
 
             <?php 
                 if(have_posts()):

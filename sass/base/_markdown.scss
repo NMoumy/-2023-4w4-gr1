@@ -1,96 +1,59 @@
+// /* ----------------------------  la liste */
+// ul,ol {
 
-/* ----------------------------  la liste */
-ul,ol {
-  margin: 0rem 0rem;
-  padding: 7px;
-  font-size: 0.9rem;
-  color: #000000;
-  font-family: 'Roboto', sans-serif;
+// }
 
-  @media screen and (min-width: $largeur__tablette) {
-    margin: 1rem 0.5rem;
-    padding: 10px;
-    font-size: 1rem;
-  }
+// ul > li,
+// ol > li {
 
-  @media screen and (min-width: $largeur__bureau) {
-    margin: 1rem 0.5rem;
-    padding: 13px;
-    font-size: 1.1rem;
-  }
+// }
 
-}
+// /* ----------------------------  le texte */
 
-ul > li,
-ol > li {
-  margin: 0.5rem 0rem;
-}
+// h2 {
 
-/* ----------------------------  le texte */
+// }
+// h3 {
 
-h2 {
-  font-size: 1.2rem;
-  @media screen and (min-width: $largeur__bureau) {
-    font-size: 2rem;
-  }
-}
-h3 {
-  font-size: 1.5rem;
-  @media screen and (min-width: $largeur__bureau) {
-    font-size: 2.1rem;
-  }
-}
+// }
 
-h6 {
-  color: #fffcf2;
-}
+// h6 {
 
-p {
-  color: rgb(0, 0, 0);
-  font-size: 1.1rem;
-}
+// }
 
-/* ----------------------------  texte gras */
-strong {
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-}
+// p {
+
+// }
+
+// /* ----------------------------  texte gras */
+// strong {
+
+// }
 
 
-/* ----------------------------  les liens hypertexte */
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: rgb(1, 184, 105);
-}
+// /* ----------------------------  les liens hypertexte */
+// a {
 
-/* ----------------------------  pre */
-pre {
-  background: #252422;
-  color: white;
-  overflow-x: scroll;
-  align-self: center;
-  width: 25rem;
-  padding: 10px;
+// }
+// a:hover {
 
-  @media screen and (min-width: $largeur__bureau) {
-    width: 60rem;
-  }
-}
-/*la barre de defilement*/
-pre::-webkit-scrollbar {
-  background-color: rgb(237, 237, 237);
-}
-pre::-webkit-scrollbar-thumb {
-  background-color: rgb(199, 199, 199);
-}
+// }
 
-/* ----------------------------  la ligne de separation */
+// /* ----------------------------  pre */
+// pre {
 
-hr {
-  display: none;
-}
+// }
+// /*la barre de defilement*/
+// pre::-webkit-scrollbar {
+
+// }
+// pre::-webkit-scrollbar-thumb {
+  
+// }
+
+// /* ----------------------------  la ligne de separation */
+
+// hr {
+// }
 
 
