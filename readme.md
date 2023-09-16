@@ -10,6 +10,3 @@
 ## description du projet :
 - ecire les descriptions ici 
 - autres descriptions
-
-
-# hydraTim
